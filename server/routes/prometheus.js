@@ -1,17 +1,6 @@
+
 const request = require('request');
 const formatter = require('./formatter');
-
-function getInfo(callback) {
-
-  request('http://localhost:5601/api/status', function (error, res, body) {
-    if (error) {
-      callback(error);
-      return;
-    }
-
-    callback(null, JSON.parse(body));
-  });
-}
 
 export default function (server) {
 
@@ -20,15 +9,29 @@ export default function (server) {
     method: 'GET',
     handler(req, reply) {
 
-      // call getInfo and it will call getInfoCallback() when it is done 
-      getInfo(function getInfoCallback(error, info) {
+      getMetrics( server.info.protocol
+                , server.info.host
+                , server.info.port
+                , function getMetricsCallback(error, info) {
         if (error) {
           reply(error);
           return
         }
 
-        reply(formatter(info));
+        reply(formatter(info)).type('text/plain').encoding('binary');
       });
     }
+  });
+}
+
+function getMetrics(protocol, host, port, callback) {
+
+  request(`${protocol}://${host}:${port}/api/status`, function (error, res, body) {
+    if (error) {
+      callback(error);
+      return;
+    }
+
+    callback(null, JSON.parse(body));
   });
 }
