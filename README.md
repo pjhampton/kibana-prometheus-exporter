@@ -1,6 +1,6 @@
 # kibana-prometheus-exporter
 
-> Exports Kibana's metrics in the Prometheus format
+> An awesome Kibana plugin
 
 ---
 

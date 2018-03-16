@@ -1,7 +1,7 @@
 {
   "name": "kibana-prometheus-exporter",
-  "version": "0.1.0",
-  "description": "Exports Kibana's metrics in the Prometheus format",
+  "version": "0.0.0",
+  "description": "An awesome Kibana plugin",
   "main": "index.js",
   "kibana": {
     "version": "6.2.2",
@@ -29,8 +29,5 @@
     "eslint-plugin-prefer-object-spread": "^1.2.1",
     "eslint-plugin-react": "^7.0.1",
     "expect.js": "^0.3.1"
-  },
-  "dependencies": {
-    "request": "^2.85.0"
   }
 }

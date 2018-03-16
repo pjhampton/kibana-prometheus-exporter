@@ -21,7 +21,7 @@ function prometheus_style_formatter(payload) {
     let prometheus_style = '';
 
     for (var key in payload) {
-        prometheus_style += `# HELP ${key}\n`;
+        prometheus_style += `# HELP ${key} ${key}\n`;
         prometheus_style += `# TYPE ${key} gauge\n`;
         prometheus_style += `${key} ${payload[key]}\n`;
     }
