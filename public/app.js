@@ -4,19 +4,19 @@ import uiRoutes from 'ui/routes';
 
 import 'ui/autoload/styles';
 import './less/main.less';
-import template from './templates/index.html';
+import prometheusTemplate from './templates/index.html';
 
 uiRoutes.enable();
 uiRoutes
   .when('/', {
-    template
+    prometheusTemplate
   });
 
 uiModules
   .get('_prometheus/metrics', [])
   .controller('kibanaPrometheusExporterHelloWorld', function ($scope, $route, $interval) {
     $scope.title = 'Prometheus';
-    $scope.description = 'An awesome Kibana plugin';
+    $scope.description = '';
 
     const currentTime = moment($route.current.locals.currentTime);
     $scope.currentTime = currentTime.format('HH:mm:ss');
