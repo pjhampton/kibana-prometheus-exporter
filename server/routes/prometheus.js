@@ -1,3 +1,4 @@
+
 const request = require('request');
 const formatter = require('./formatter');
 
@@ -12,6 +13,7 @@ export default function (server) {
                 , server.info.host
                 , server.info.port
                 , function getMetricsCallback(error, info) {
+
         if (error) {
           reply(error);
           return
@@ -25,7 +27,9 @@ export default function (server) {
 
 function getMetrics(protocol, host, port, callback) {
 
-  request(`${protocol}://${host}:${port}/api/status`, function (error, res, body) {
+  const url = `${protocol}://${host}:${port}/api/status`;
+
+  request(url, function (error, res, body) {
     if (error) {
       callback(error);
       return;

@@ -1,27 +1,29 @@
-import moment from 'moment';
+
 import { uiModules } from 'ui/modules';
 import uiRoutes from 'ui/routes';
 
 import 'ui/autoload/styles';
 import './less/main.less';
-import prometheusTemplate from './templates/index.html';
+import template from './templates/index.html';
 
 uiRoutes.enable();
 uiRoutes
   .when('/', {
-    prometheusTemplate
+    template,
+    resolve: {
+      currentMetrics($http) {
+        return $http.get('../_prometheus/metrics').then(function (response) {
+          return response;
+        });
+      }
+    }
   });
 
 uiModules
-  .get('_prometheus/metrics', [])
+  .get('app/kibana-prometheus-exporter', [])
   .controller('kibanaPrometheusExporterHelloWorld', function ($scope, $route, $interval) {
-    $scope.title = 'Prometheus';
-    $scope.description = '';
+    const metrics = $route.current.locals.currentMetrics;
+    const pre_metrics = metrics['data'];
 
-    const currentTime = moment($route.current.locals.currentTime);
-    $scope.currentTime = currentTime.format('HH:mm:ss');
-    const unsubscribe = $interval(function () {
-      $scope.currentTime = currentTime.add(1, 'second').format('HH:mm:ss');
-    }, 1000);
-    $scope.$watch('$destroy', unsubscribe);
+    $scope.metrics = pre_metrics;
   });
