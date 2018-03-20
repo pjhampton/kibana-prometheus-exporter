@@ -1,4 +1,4 @@
-# Kibana Prometheus Exporter - WIP!
+# Kibana Prometheus Exporter 
 
 A Kibana plugin that exposes metrics in the Prometheus format.
 Once Installed, please visit http://localhost:5601/_prometheus/metrics
