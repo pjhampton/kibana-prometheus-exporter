@@ -16,8 +16,8 @@ export default function (info) {
     metrics['kibana_os_cpu_load_average{interval="15m"}'] = info.metrics.os.cpu.load_average['15m'] || 0;
 
     for(var key in info.status.statuses) {
-        const plugin_name = info.status.statuses[key]['id'].split(/:|@/)[1];
-        metrics['kibana_plugin_' + plugin_name.replace('/-/g', '_')] = convert_state_to_number(info.status.statuses[key]['state']);
+        const plugin_name = info.status.statuses[key]['id'].split(/:|@/)[1].replace(/-/g, '_');
+        metrics['kibana_plugin_' + plugin_name] = convert_state_to_number(info.status.statuses[key]['state']);
     }
 
     return prometheus_style_formatter(metrics);
