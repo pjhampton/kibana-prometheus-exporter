@@ -16,7 +16,12 @@ export default function (info) {
     metrics['kibana_os_cpu_load_average{interval="15m"}'] = info.metrics.os.cpu.load_average['15m'] || 0;
 
     for(var key in info.status.statuses) {
-        const plugin_name = info.status.statuses[key]['id'].split(/:|@/)[1].replace(/-/g, '_');
+        const plugin_name = info.status.statuses[key]['id'].split(/:|@/)[1];
+        
+        if (plugin_name != null) {
+			plugin_name = plugin_name.replace(/-/g, '_')
+		}
+        
         metrics['kibana_plugin_' + plugin_name] = convert_state_to_number(info.status.statuses[key]['state']);
     }
 
