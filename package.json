@@ -1,5 +1,5 @@
 {
-  "name": "kibana-prometheus-exporter",
+  "name": "prometheus-exporter",
   "version": "1.0.0",
   "description": "Prometheus metrics for Kibana",
   "main": "index.js",
