@@ -4,7 +4,7 @@
   "description": "Prometheus metrics for Kibana",
   "main": "index.js",
   "kibana": {
-    "version": "6.3.0",
+    "version": "6.2.4",
     "templateVersion": "8.0.0"
   },
   "scripts": {
