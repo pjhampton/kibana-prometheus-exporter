@@ -11,13 +11,13 @@ Once Installed, please visit http://localhost:5601/_prometheus/metrics
 
 ## Installing
 
-There is a couple of ways to install this plugin. The more common approach would be to download the [correct version](#versions) and run:
+First, locate the version you require on the [release page](https://github.com/pjhampton/kibana-prometheus-exporter/releases). There is a couple of ways to install this plugin. The more common approach would be to download the [correct version](#versions) and run:
 
 ```
-bin/kibana-plugin install kibana-prometheus-exporter.zip
+bin/kibana-plugin install kibana-prometheus-exporter-X.X.X.zip
 ```
 
-or download and unzip in the kibana/plugins directory.
+where `X.X.X` is the version. or download and unzip in the kibana/plugins directory.
 
 ## Versions
 
