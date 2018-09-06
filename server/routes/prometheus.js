@@ -27,7 +27,7 @@ export default function (server) {
 
 function getMetrics(protocol, host, port, callback) {
 
-  const url = `${protocol}://${host}:${port}/api/status?extended`;
+  const url = `${protocol}://${host}:${port}/api/status`;
 
   request(url, function (error, res, body) {
     if (error) {
