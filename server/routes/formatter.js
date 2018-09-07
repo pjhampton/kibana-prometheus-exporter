@@ -3,7 +3,9 @@ export default function (info) {
     let metrics = {};
 
     metrics['kibana_status'] = convert_state_to_number(info.status.overall.state);
-    // metrics['kibana_millis_uptime']
+    metrics['kibana_millis_uptime'] = calculate_timeup(info.status.overall.since);
+    metrics['kibana_heap_total'] = info.metrics.heapTotal[0][1];
+    metrics['kibana_heap_used']  = info.metrics.heapUsed[0][1];
 
     for(var key in info.status.statuses) {
         let plugin_name = info.status.statuses[key]['id'].split(/:|@/)[1];
@@ -16,6 +18,13 @@ export default function (info) {
     }
 
     return prometheus_style_formatter(metrics);
+}
+
+function calculate_timeup(kibana_uptime) {
+  Date.prototype.getUnixTime = function() { return this.getTime()/1000|0 };
+
+  var ktime = new Date(kibana_uptime).getUnixTime();
+  return (new Date().getUnixTime() - ktime) * 1000;
 }
 
 function convert_state_to_number(state) {
