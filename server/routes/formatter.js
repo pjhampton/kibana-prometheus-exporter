@@ -4,8 +4,8 @@ export default function (info) {
 
     metrics['kibana_status'] = convert_state_to_number(info.status.overall.state);
     metrics['kibana_millis_uptime'] = calculate_timeup(info.status.overall.since);
-    metrics['kibana_heap_total'] = info.metrics.heapTotal[0][1];
-    metrics['kibana_heap_used']  = info.metrics.heapUsed[0][1];
+    metrics['kibana_heap_total'] = info.metrics.heapTotal[0][1] || 0;
+    metrics['kibana_heap_used']  = info.metrics.heapUsed[0][1] || 0;
 
     for(var key in info.status.statuses) {
         let plugin_name = info.status.statuses[key]['id'].split(/:|@/)[1];
