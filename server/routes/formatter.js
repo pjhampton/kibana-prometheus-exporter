@@ -11,9 +11,9 @@ export default function (info) {
     metrics['kibana_concurrent_connections'] = info.metrics.concurrent_connections || 0;
     metrics['kibana_requests_total'] = info.metrics.requests.total || 0;
     metrics['kibana_requests_disconnects'] = info.metrics.disconnects || 0;
-    metrics['kibana_os_load1'] = info.metrics.os.load['1m'] || 0;
-    metrics['kibana_os_load5'] = info.metrics.os.load['5m'] || 0;
-    metrics['kibana_os_load15'] = info.metrics.os.load['15m'] || 0;
+    metrics['kibana_os_load1'] = info.metrics.os.cpu.load_average['1m'] || 0;
+    metrics['kibana_os_load5'] = info.metrics.os.cpu.load_average['5m'] || 0;
+    metrics['kibana_os_load15'] = info.metrics.os.cpu.load_average['15m'] || 0;
 
     for(var key in info.status.statuses) {
         let plugin_name = info.status.statuses[key]['id'].split(/:|@/)[1];
