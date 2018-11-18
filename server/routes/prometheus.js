@@ -4,15 +4,17 @@ const formatter = require('./formatter');
 
 export default function (server) {
 
+  const config = server.config();
+
   server.route({
     path: '/_prometheus/metrics',
     method: 'GET',
     handler(req, reply) {
 
-      getMetrics( server.info.protocol
-                , server.info.host
-                , server.info.port
-                , function getMetricsCallback(error, info) {
+        var basePath = config.get('server').basePath.toString();
+        var statsUrl = makeUrl(server.info.uri, basePath);
+
+        getMetrics(statsUrl, function getMetricsCallback(error, info) {
 
         if (error) {
           reply(error);
@@ -25,9 +27,11 @@ export default function (server) {
   });
 }
 
-function getMetrics(protocol, host, port, callback) {
+function makeUrl(uri, basePath) {
+  return `${uri}${basePath}/api/status?extended`;
+}
 
-  const url = `${protocol}://${host}:${port}/api/status?extended`;
+function getMetrics(url, callback) {
 
   request(url, function (error, res, body) {
     if (error) {
