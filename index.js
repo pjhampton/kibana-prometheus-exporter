@@ -19,6 +19,8 @@ export default function (kibana) {
     config(Joi) {
       return Joi.object({
         enabled: Joi.boolean().default(true),
+        user: Joi.string().default(''),
+        pass: Joi.string().default('')
       }).default();
     },
 

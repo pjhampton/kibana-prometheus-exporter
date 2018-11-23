@@ -11,10 +11,15 @@ export default function (server) {
     method: 'GET',
     handler(req, reply) {
 
-        var basePath = config.get('server').basePath.toString();
-        var statsUrl = makeUrl(server.info.uri, basePath);
+      var basePath = config.get('server').basePath.toString();
+      var username = config.get('kibana-prometheus-exporter.user').toString();
+      var pass = config.get('kibana-prometheus-exporter.pass').toString();
+      var statsUrl = makeUrl(server.info.uri, basePath);
 
-        getMetrics(statsUrl, function getMetricsCallback(error, info) {
+      var user = { user: username, pass: pass };
+      console.log(user)
+
+      getMetrics(statsUrl, user, function getMetricsCallback(error, info) {
 
         if (error) {
           reply(error);
@@ -31,9 +36,16 @@ function makeUrl(uri, basePath) {
   return `${uri}${basePath}/api/status?extended`;
 }
 
-function getMetrics(url, callback) {
+function getMetrics(url, user, callback) {
 
-  request(url, function (error, res, body) {
+  var auth = "Basic " + new Buffer(user.user + ":" + user.pass).toString("base64");
+
+  request({
+      url : url,
+      headers : {
+        "Authorization" : auth
+      }
+    }, function (error, res, body) {
     if (error) {
       callback(error);
       return;
