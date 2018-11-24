@@ -19,6 +19,7 @@ export default function (kibana) {
     config(Joi) {
       return Joi.object({
         enabled: Joi.boolean().default(true),
+        path: Joi.string().default('/_prometheus/metrics'),
         user: Joi.string().default(''),
         pass: Joi.string().default('')
       }).default();

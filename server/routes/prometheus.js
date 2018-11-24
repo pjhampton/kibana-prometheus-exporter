@@ -7,7 +7,7 @@ export default function (server) {
   const config = server.config();
 
   server.route({
-    path: '/_prometheus/metrics',
+    path: config.get('kibana-prometheus-exporter.path'),
     method: 'GET',
     handler(req, reply) {
 
