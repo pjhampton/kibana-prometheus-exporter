@@ -3,7 +3,7 @@ import prometheusRoute from './server/exporter/prometheus';
 
 export default function (kibana) {
   return new kibana.Plugin({
-    require: ['elasticsearch'],
+    require: [],
     name: 'kibana-prometheus-exporter',
     uiExports: {
       
