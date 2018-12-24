@@ -1,5 +1,5 @@
 
-import prometheusRoute from './server/routes/prometheus';
+import prometheusRoute from './server/exporter/prometheus';
 
 export default function (kibana) {
   return new kibana.Plugin({
@@ -13,7 +13,6 @@ export default function (kibana) {
         description: 'Prometheus metrics for Kibana',
         main: 'plugins/kibana-prometheus-exporter/app'
       },
-      
     },
 
     config(Joi) {
