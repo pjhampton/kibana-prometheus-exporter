@@ -2,19 +2,18 @@
 const Requester = require('request-promise');
 const Formatter = require('./formatter');
 
-const makeUrl = (uri, basePath) =>
-  `${uri}${basePath}/api/status?extended`;
+const makeUrl = (uri, path) =>
+  `${uri}${path}/api/status?extended`;
 
 export default function (server) {
 
   const config = server.config();
-  const basePath = config.get('server').basePath.toString();
+  const path = config.get('server').basePath.toString();
   const user = config.get('kibana-prometheus-exporter.user');
   const pass = config.get('kibana-prometheus-exporter.pass');
-  const auth = 'Basic ' + new Buffer(`${user}:${pass}`).toString('base64');
   const url = {
-    uri: makeUrl(server.info.uri, basePath),
-    headers: { 'Authorization': auth },
+    uri: makeUrl(server.info.uri, path),
+    auth: { 'user': user, 'pass': pass },
     json: true
   };
 
