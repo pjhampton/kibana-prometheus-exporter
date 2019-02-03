@@ -11,7 +11,7 @@ export default function (server) {
   const path = config.get('server').basePath.toString();
   const user = config.get('kibana-prometheus-exporter.user');
   const pass = config.get('kibana-prometheus-exporter.pass');
-  const url = {
+  const request = {
     uri: makeUrl(server.info.uri, path),
     auth: { 'user': user, 'pass': pass },
     json: true
@@ -22,7 +22,7 @@ export default function (server) {
     method: 'GET',
     async handler(req, h) {
 
-      const stats = await Requester.get(url)
+      const stats = await Requester.get(request)
       const prometheusStats = Formatter(stats);
 
       return await h
