@@ -1,18 +1,22 @@
-
 const request = require('request');
 const formatter = require('./formatter');
 
 export default function (server) {
 
+  const config = server.config();
+
   server.route({
-    path: '/_prometheus/metrics',
+    path: config.get('kibana-prometheus-exporter.path'),
     method: 'GET',
     handler(req, reply) {
 
-      getMetrics( server.info.protocol
-                , server.info.host
-                , server.info.port
-                , function getMetricsCallback(error, info) {
+      const basePath = config.get('server').basePath.toString();
+      const username = config.get('kibana-prometheus-exporter.user');
+      const pass = config.get('kibana-prometheus-exporter.pass');
+      const statsUrl = makeUrl(server.info.uri, basePath);
+      const user = { user: username, pass: pass };
+      
+      getMetrics(statsUrl, user, function getMetricsCallback(error, info) {
 
         if (error) {
           reply(error);
@@ -25,11 +29,20 @@ export default function (server) {
   });
 }
 
-function getMetrics(protocol, host, port, callback) {
+function makeUrl(uri, basePath) {
+  return `${uri}${basePath}/api/status?extended`;
+}
 
-  const url = `${protocol}://${host}:${port}/api/status`;
+function getMetrics(url, user, callback) {
 
-  request(url, function (error, res, body) {
+  const auth = "Basic " + new Buffer(user.user + ":" + user.pass).toString("base64");
+
+  request({
+      url : url,
+      headers : {
+        "Authorization" : auth
+      }
+    }, function (error, res, body) {
     if (error) {
       callback(error);
       return;

@@ -3,7 +3,7 @@ import prometheusRoute from './server/routes/prometheus';
 
 export default function (kibana) {
   return new kibana.Plugin({
-    require: ['elasticsearch'],
+    require: [],
     name: 'kibana-prometheus-exporter',
     uiExports: {
       
@@ -13,12 +13,14 @@ export default function (kibana) {
         description: 'Prometheus metrics for Kibana',
         main: 'plugins/kibana-prometheus-exporter/app'
       },
-      
     },
 
     config(Joi) {
       return Joi.object({
         enabled: Joi.boolean().default(true),
+        path: Joi.string().default('/_prometheus/metrics'),
+        user: Joi.string().default('default'),
+        pass: Joi.string().default('default')
       }).default();
     },
 
