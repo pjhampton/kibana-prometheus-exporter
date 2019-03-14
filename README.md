@@ -17,7 +17,15 @@ First, locate the version you require on the [release page](https://github.com/p
 bin/kibana-plugin install https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/6.5.2/kibana-prometheus-exporter-6.5.2.zip
 ```
 
-**Important**: Please don't build off and install from the trunk (master). This is a development / experimental branch so don't be that girl/guy, please.
+**Important**: Please don't build off and install from the trunk (master). This is a development / experimental branch so don't be that girl/them/guy, please. The `RELEASE/{NUM}` branches are the release branches. This process is shaped by the Kibana release process.
+
+## Docker
+
+You can install into your container with the following command (replace, or env set `${KIBANA_VERSION}`):
+
+```
+RUN bin/kibana-plugin install https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/${KIBANA_VERSION}/kibana-prometheus-exporter-${KIBANA_VERSION}.zip
+```
 
 ## Metrics 
 
