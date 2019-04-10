@@ -29,10 +29,10 @@ export default function (info) {
 }
 
 function convert_state_to_number(state) {
-    if (state == "green") {
+    if (state == 'green') {
         return 1;
     }
-    else if (state == "yellow") {
+    else if (state == 'yellow') {
         return 0.5;
     }
     else {
