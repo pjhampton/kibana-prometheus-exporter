@@ -1,10 +1,10 @@
 {
   "name": "kibana-prometheus-exporter",
-  "version": "6.7.1",
+  "version": "7.0.0",
   "description": "Prometheus metrics for Kibana",
   "main": "index.js",
   "kibana": {
-    "version": "6.7.1",
+    "version": "7.0.0",
     "templateVersion": "8.0.0"
   },
   "scripts": {
