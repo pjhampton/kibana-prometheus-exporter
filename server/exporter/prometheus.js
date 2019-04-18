@@ -1,4 +1,5 @@
 
+const fs = require('fs');
 const Requester = require('request-promise');
 const Formatter = require('./formatter');
 
@@ -22,8 +23,8 @@ export default function (server) {
   };
 
   if (sslEnabled && sslCert && sslKey) {
-    request[cert] = sslCert
-    request[key] = sslKey;
+    request['cert'] = fs.readFileSync(sslCert);
+    request['key'] = fs.readFileSync(sslKey);
   }
 
   server.route({
