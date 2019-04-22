@@ -22,7 +22,7 @@ export default function (server) {
   server.route({
     path: config.get('kibana-prometheus-exporter.path'),
     method: 'GET',
-    async handler(req, h) {
+    async handler(_, h) {
 
       const stats = await Requester.get(request)
       const prometheusStats = Formatter(stats);
