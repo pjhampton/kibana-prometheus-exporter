@@ -36,7 +36,7 @@ RUN bin/kibana-plugin install https://github.com/pjhampton/kibana-prometheus-exp
 
 Details on the various exported metrics are documented on the [Github wiki page](https://github.com/pjhampton/kibana-prometheus-exporter/wiki).
 
-## Version
+## Versions
 
 | Version | Release Artifact - The version of the plugin must match your version of Kibana / Elasticsearch                   |
 |---------|------------------------------------------------------------------------------------------------------------------|
