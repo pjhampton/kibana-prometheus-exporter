@@ -3,6 +3,11 @@
 A Kibana plugin that exposes metrics in the Prometheus format.
 Once Installed, please visit http://localhost:5601/_prometheus/metrics
 
+1) [Installing](#installing)
+2) [Docker](#docker)
+3) [Metrics](#metrics)
+4) [Versions](#versions)
+
 ---
 
 <img src="https://raw.githubusercontent.com/pjhampton/kibana-prometheus-exporter/master/screenshots/kibana_ui.png" alt="kibana prometheus exporter ui">
