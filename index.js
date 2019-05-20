@@ -9,7 +9,7 @@ export default function (kibana) {
       
       app: {
         title: 'Prometheus',
-        icon: 'plugins/kibana-prometheus-exporter/prometheus.png',
+        icon: 'plugins/kibana-prometheus-exporter/prometheus.svg',
         description: 'Prometheus metrics for Kibana',
         main: 'plugins/kibana-prometheus-exporter/app'
       },
