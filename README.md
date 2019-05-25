@@ -40,6 +40,7 @@ Details on the various exported metrics are documented on the [Github wiki page]
 
 | Version | Release Artifact - The version of the plugin must match your version of Kibana / Elasticsearch                   |
 |---------|------------------------------------------------------------------------------------------------------------------|
+| 7.1.0   | [kibana-prometheus-exporter-7.1.0](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.1.0)   |
 | 7.0.2   | [kibana-prometheus-exporter-7.0.2](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.0.2)   |
 | 7.0.1   | [kibana-prometheus-exporter-7.0.1](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.0.1)   |
 | 7.0.0   | [kibana-prometheus-exporter-7.0.0](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.0.0)   |
