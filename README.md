@@ -7,7 +7,6 @@ Once Installed, please visit http://localhost:5601/_prometheus/metrics
 2) [Docker](#docker)
 3) [Metrics](#metrics)
 4) [Versions](#versions)
-5) [Sponsored Versions](#sponsored-versions)
 
 ---
 
@@ -90,12 +89,4 @@ Details on the various exported metrics are documented on the [Github wiki page]
 | 5.6.0   | [kibana-prometheus-exporter-5.6.0](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/5.6.0)   |
 
 *The version of this plugin must match the version of Kibana you are running.* [Click here](https://github.com/pjhampton/kibana-prometheus-exporter/releases) to download the available versions. If you don't see the version you want, please feel free to open an issue to request.
-
-## Sponsored Versions
-
-If you require a special release or a specific version you can sponsor the development. Please open an issue to request. These branches are not included in the build / release train.
-
-| Version | Release Artifact - The version of the plugin must match your version of Kibana / Elasticsearch                   |
-|---------|------------------------------------------------------------------------------------------------------------------|
-| 5.3.0   | [kibana-prometheus-exporter-5.3.0](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/5.3.0)   |
 
