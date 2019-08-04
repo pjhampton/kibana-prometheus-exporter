@@ -14,6 +14,7 @@ export default function (server) {
   const request = {
     uri: makeUrl(server.info.uri, path),
     auth: { 'user': user, 'pass': pass },
+    rejectUnauthorized: false,
     json: true
   };
 
