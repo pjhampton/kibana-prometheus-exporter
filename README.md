@@ -49,6 +49,9 @@ Details on the various exported metrics are documented on the [Github wiki page]
 | 7.0.2   | [kibana-prometheus-exporter-7.0.2](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.0.2)   |
 | 7.0.1   | [kibana-prometheus-exporter-7.0.1](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.0.1)   |
 | 7.0.0   | [kibana-prometheus-exporter-7.0.0](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.0.0)   |
+| 6.8.3   | [kibana-prometheus-exporter-6.8.3](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/6.8.3)   |
+| 6.8.2   | [kibana-prometheus-exporter-6.8.2](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/6.8.2)   |
+| 6.8.1   | [kibana-prometheus-exporter-6.8.1](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/6.8.1)   |
 | 6.8.0   | [kibana-prometheus-exporter-6.8.0](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/6.8.0)   |
 | 6.7.1   | [kibana-prometheus-exporter-6.7.1](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/6.7.1)   |
 | 6.7.0   | [kibana-prometheus-exporter-6.7.0](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/6.7.0)   |
