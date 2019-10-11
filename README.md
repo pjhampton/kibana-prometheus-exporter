@@ -6,7 +6,8 @@ Once Installed, please visit http://localhost:5601/_prometheus/metrics
 1) [Installing](#installing)
 2) [Docker](#docker)
 3) [Metrics](#metrics)
-4) [Versions](#versions)
+4) [Support](#support)
+5) [Versions](#versions)
 
 ---
 
@@ -35,6 +36,10 @@ RUN bin/kibana-plugin install https://github.com/pjhampton/kibana-prometheus-exp
 ## Metrics 
 
 Details on the various exported metrics are documented on the [Github wiki page](https://github.com/pjhampton/kibana-prometheus-exporter/wiki).
+
+## Support
+
+I don't accept donations for my OSS contributions, but if you would like to say thanks and show your support then please donate to [Assisi NI](https://www.assisi-ni.org/), [Dogs Trust](https://www.dogstrust.org.uk/) and / or your local guide dog charity. :dog: 
 
 ## Versions
 
