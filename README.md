@@ -45,6 +45,7 @@ I don't accept donations for my OSS contributions, but if you would like to say 
 
 | Version | Release Artifact - The version of the plugin must match your version of Kibana / Elasticsearch                   |
 |---------|------------------------------------------------------------------------------------------------------------------|
+| 7.4.0   | [kibana-prometheus-exporter-7.3.2](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.4.0)   |
 | 7.3.2   | [kibana-prometheus-exporter-7.3.2](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.3.2)   |
 | 7.3.1   | [kibana-prometheus-exporter-7.3.1](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.3.1)   |
 | 7.3.0   | [kibana-prometheus-exporter-7.3.0](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.3.0)   |
