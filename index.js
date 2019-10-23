@@ -5,15 +5,7 @@ export default function (kibana) {
   return new kibana.Plugin({
     require: [],
     name: 'kibana-prometheus-exporter',
-    uiExports: {
-      
-      app: {
-        title: 'Prometheus',
-        icon: 'plugins/kibana-prometheus-exporter/prometheus.svg',
-        description: 'Prometheus metrics for Kibana',
-        main: 'plugins/kibana-prometheus-exporter/app'
-      },
-    },
+    uiExports: {},
 
     config(Joi) {
       return Joi.object({
