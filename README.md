@@ -6,7 +6,7 @@ Once Installed, please visit http://localhost:5601/_prometheus/metrics
 1) [Installing](#installing)
 2) [Docker](#docker)
 3) [Metrics](#metrics)
-4) [X-Pack / SSL / Basic Auth]()
+4) [X-Pack / SSL / Basic Auth](#x-pack--ssl--basic-auth)
 4) [Support](#support)
 5) [Versions](#versions)
 
