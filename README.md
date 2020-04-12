@@ -47,7 +47,7 @@ kibana-prometheus-exporter.user: ohSoSecret!
 
 ## Support
 
-I don't accept donations for my OSS contributions, but if you would like to say thanks and show your support then please donate to [Assisi NI](https://www.assisi-ni.org/), [Dogs Trust](https://www.dogstrust.org.uk/) and / or your local guide dog charity. :dog: :dog:
+I don't accept donations for my OSS contributions, but if you would like to say thanks and show your support then please donate to [Assisi NI](https://www.assisi-ni.org/), [Guide Dogs UK](https://www.guidedogs.org.uk/) and / or your local guide dog charity / sanctuary. :dog: :dog:
 
 ## Versions
 
