@@ -36,7 +36,7 @@ RUN bin/kibana-plugin install https://github.com/pjhampton/kibana-prometheus-exp
 
 Details on the various exported metrics are documented on the [Github wiki page](https://github.com/pjhampton/kibana-prometheus-exporter/wiki).
 
-## X-Pack / SSL / Basic Auth
+## SSL / Basic Auth
 
 SSL certs should not be an issue - as it is a mirror request the plugin does not check the servers identity. As for X-Pack and Basic Auth enablement, you can add the following to your **config/kibana.yml** and replace with your user and pass. The credentials are encoded in a Base64 header when sent over the wire.
 
@@ -47,7 +47,7 @@ kibana-prometheus-exporter.user: ohSoSecret!
 
 ## Support
 
-I don't accept donations for my OSS contributions, but if you would like to say thanks and show your support then please donate to [Assisi NI](https://www.assisi-ni.org/), [Guide Dogs UK](https://www.guidedogs.org.uk/) and / or your local guide dog charity / sanctuary. :dog: :dog:
+If you would like to say thanks or show your support then please donate to [Assisi NI](https://www.assisi-ni.org/), [Guide Dogs UK](https://www.guidedogs.org.uk/) and / or your local guide dog charity / sanctuary. :dog: :dog: Code / Docs contributions are also very welcome :sparkle:
 
 ## Versions
 
