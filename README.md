@@ -6,9 +6,10 @@ Once Installed, please visit http://localhost:5601/_prometheus/metrics
 1) [Installing](#installing)
 2) [Docker](#docker)
 3) [Metrics](#metrics)
-4) [X-Pack / SSL / Basic Auth](#x-pack--ssl--basic-auth)
+4) [SSL / Basic Auth](#ssl--basic-auth)
 4) [Support](#support)
 5) [Versions](#versions)
+6) [License](#license)
 
 ---
 
@@ -121,4 +122,8 @@ If you would like to say thanks or show your support then please donate to [Assi
 | 5.6.0   | [kibana-prometheus-exporter-5.6.0](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/5.6.0)   |
 
 *The version of this plugin must match the version of Kibana you are running.* [Click here](https://github.com/pjhampton/kibana-prometheus-exporter/releases) to download the available versions. If you don't see the version you want, please feel free to open an issue to request.
+
+# License
+
+This project is licensed under [Apache Commons 2.0](https://github.com/pjhampton/kibana-prometheus-exporter/blob/master/LICENSE.md). Not interested in legal mumbo jumbo? Read the [TL;DR here](https://tldrlegal.com/license/apache-license-2.0-(apache-2.0))
 
