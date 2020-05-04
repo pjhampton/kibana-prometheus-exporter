@@ -43,7 +43,7 @@ SSL certs should not be an issue - as it is a mirror request the plugin does not
 
 ```
 kibana-prometheus-exporter.user: kibanaUser
-kibana-prometheus-exporter.user: ohSoSecret!
+kibana-prometheus-exporter.pass: ohSoSecret!
 ```
 
 ## Support
