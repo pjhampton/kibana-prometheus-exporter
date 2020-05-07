@@ -8,7 +8,6 @@ Once Installed, please visit http://localhost:5601/_prometheus/metrics
 1. [Docker](#docker)
 1. [Metrics](#metrics)
 1. [SSL / Basic Auth](#ssl--basic-auth)
-1. [Support](#support)
 1. [License](#license)
 1. [Versions](#versions)
 
