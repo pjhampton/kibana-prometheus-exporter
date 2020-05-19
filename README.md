@@ -55,6 +55,7 @@ Not interested in legal mumbo jumbo? Read the [TL;DR here](https://tldrlegal.com
 
 | Version | Release Artifact - The version of the plugin must match your version of Kibana / Elasticsearch                   |
 |---------|------------------------------------------------------------------------------------------------------------------|
+| 7.7.0   | [kibana-prometheus-exporter-7.7.0](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.7.0)   |
 | 7.6.2   | [kibana-prometheus-exporter-7.6.2](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.6.2)   |
 | 7.6.1   | [kibana-prometheus-exporter-7.6.1](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.6.1)   |
 | 7.6.0   | [kibana-prometheus-exporter-7.6.0](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.6.0)   |
