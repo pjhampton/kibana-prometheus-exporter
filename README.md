@@ -8,7 +8,6 @@ Once Installed, please visit http://localhost:5601/_prometheus/metrics
 1. [Docker](#docker)
 1. [Metrics](#metrics)
 1. [SSL / Basic Auth](#ssl--basic-auth)
-1. [License](#license)
 1. [Versions](#versions)
 
 ## Installing
@@ -41,13 +40,6 @@ SSL certs should not be an issue - as it is a mirror request the plugin does not
 kibana-prometheus-exporter.user: kibanaUser
 kibana-prometheus-exporter.pass: ohSoSecret!
 ```
-
-# License
-
-This project is licensed under [Apache Commons 2.0](https://github.com/pjhampton/kibana-prometheus-exporter/blob/master/LICENSE.md). 
-
-Not interested in legal mumbo jumbo? Read the [TL;DR here](https://tldrlegal.com/license/apache-license-2.0-(apache-2.0))
-
 
 ## Versions
 
