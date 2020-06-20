@@ -45,7 +45,7 @@ kibana-prometheus-exporter.pass: ohSoSecret!
 
 *The version of this plugin must match the version of Kibana you are running.* [Click here](https://github.com/pjhampton/kibana-prometheus-exporter/releases) to download the available versions. If you don't see the version you want, please feel free to open an issue to request.
 
-| Version | MD5 / SHA1 / SHA256 / SHA512  | Release Artifact - The version must match your version of Kibana |
+| Version | MD5 / SHA256 / SHA512  | Release Artifact - Version must match your Kibana version |
 |---------|-------------------------------|------------------------------------------------------------------|
 | 7.8.0   | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.8.0/checksum.json)  | [kibana-prometheus-exporter-7.8.0](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.8.0)   |
 | 7.7.1   | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.7.1/checksum.json) | [kibana-prometheus-exporter-7.7.1](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.7.1)   |
