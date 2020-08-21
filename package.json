@@ -27,7 +27,7 @@
     "eslint-plugin-jest": "^21.3.2",
     "eslint-plugin-mocha": "^4.9.0",
     "eslint-plugin-prefer-object-spread": "^1.2.1",
-    "eslint-plugin-react": "^7.20.5",
+    "eslint-plugin-react": "^7.20.6",
     "expect.js": "^0.3.1",
     "mem": ">=6.1.0"
   },
