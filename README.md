@@ -47,6 +47,8 @@ kibana-prometheus-exporter.pass: ohSoSecret!
 
 | Release | MD5 / SHA1 / SHA256 / SHA512   | Release Artifact - This must match your Kibana version |
 |---------|-------------------------------|------------------------------------------------------------------|
+| 7.9.3   | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.9.3/checksum.json) | [kibana-prometheus-exporter-7.9.3](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.9.3)   |
+| 7.9.2   | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.9.2/checksum.json) | [kibana-prometheus-exporter-7.9.2](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.9.2)   |
 | 7.9.1   | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.9.1/checksum.json) | [kibana-prometheus-exporter-7.9.1](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.9.1)   |
 | 7.9.0   | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.9.0/checksum.json) | [kibana-prometheus-exporter-7.9.0](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.9.0)   |
 | 7.8.1   | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.8.1/checksum.json) | [kibana-prometheus-exporter-7.8.1](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.8.1)   |
