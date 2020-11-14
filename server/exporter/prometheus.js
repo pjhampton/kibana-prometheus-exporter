@@ -3,7 +3,7 @@ const Requester = require('request-promise');
 const Formatter = require('./formatter');
 
 const makeUrl = (uri, base, path) =>
-  `${uri}${base ? path : ''}/api/status?extended`;
+  `${uri}${base ? path : ''}/api/status`;
 
 export default function (server) {
 
