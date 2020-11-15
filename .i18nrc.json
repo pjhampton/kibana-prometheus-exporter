@@ -1,0 +1,7 @@
+{
+  "prefix": "kibanaPrometheusExporter",
+  "paths": {
+    "kibanaPrometheusExporter": "."
+  },
+  "translations": ["translations/ja-JP.json"]
+}

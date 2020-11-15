@@ -1,4 +1,4 @@
-# Kibana - Prometheus Metrics Exporter
+# !! REWRITING FOR 7.10.0 !!
 
 Once Installed, please visit http://localhost:5601/_prometheus/metrics
 

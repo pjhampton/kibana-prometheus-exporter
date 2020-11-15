@@ -1,6 +1,6 @@
 
-export default function (info) {
-    let metrics = {};
+export default function (info : any) {
+    let metrics: any = {};
 
     metrics['kibana_status'] = convert_state_to_number(info.status.overall.state);
     metrics['kibana_millis_uptime'] = info.metrics.process.uptime_in_millis;
@@ -28,7 +28,7 @@ export default function (info) {
     return prometheus_style_formatter(metrics);
 }
 
-function convert_state_to_number(state) {
+function convert_state_to_number(state: string) {
     if (state == 'green') {
         return 1;
     }
@@ -40,13 +40,13 @@ function convert_state_to_number(state) {
     }
 }
 
-function prometheus_style_formatter(payload) {
+function prometheus_style_formatter(payload: object) {
     let prometheus_style = '';
 
-    for (var key in payload) {
-        prometheus_style += `# HELP ${key} ${key}\n`;
-        prometheus_style += `# TYPE ${key} gauge\n`;
-        prometheus_style += `${key} ${payload[key]}\n`;
+    for (let kv of Object.entries(payload)) {
+        prometheus_style += `# HELP ${kv[0]} ${kv[0]}\n`;
+        prometheus_style += `# TYPE ${kv[0]} gauge\n`;
+        prometheus_style += `${kv[0]} ${kv[1]}\n`;
     }
 
     return prometheus_style;
