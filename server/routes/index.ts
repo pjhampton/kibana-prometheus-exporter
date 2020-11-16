@@ -13,11 +13,9 @@ export function defineRoutes(router: IRouter) {
     },
     async (context, request, response) => {
 
-      //console.log(request);
-
-      const kibanaInternalStatus = await axios.get("http://peter.hampton:hpuXXtMPUTPLq42@localhost:5601/api/status");
+      const kibanaInternalStatus = await axios.get("http://localhost:5601/api/status");
       // this.logger.debug(`Kibana status response: ${resp.status} ${JSON.stringify(resp.data)}`);
-      //console.log(JSON.stringify(kibanaInternalStatus.data));
+      // console.log(JSON.stringify(kibanaInternalStatus.data));
 
       const prometheusStats = formatter(kibanaInternalStatus.data);
 
