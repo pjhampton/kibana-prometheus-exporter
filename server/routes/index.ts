@@ -2,9 +2,6 @@ import { IRouter } from '../../../../src/core/server';
 import formatter  from '../../common/formatter'
 import axios from 'axios';
 
-const _makeUrl = (uri: string, base: string, path:string ) =>
-  `${uri}${base ? path : ''}/api/status`;
-
 export function defineRoutes(router: IRouter) {
   router.get(
     {
@@ -13,10 +10,15 @@ export function defineRoutes(router: IRouter) {
     },
     async (context, request, response) => {
 
-      const kibanaInternalStatus = await axios.get("http://localhost:5601/api/status");
-      // this.logger.debug(`Kibana status response: ${resp.status} ${JSON.stringify(resp.data)}`);
-      // console.log(JSON.stringify(kibanaInternalStatus.data));
-
+      const kibanaInternalStatus = await axios.get(
+        `${request.url.protocol}//${request.url.host}/api/status`,
+        {
+          headers: {
+            'Authorization': request.headers.authorization
+          }
+        }
+      );
+      
       const prometheusStats = formatter(kibanaInternalStatus.data);
 
       return response.ok({
