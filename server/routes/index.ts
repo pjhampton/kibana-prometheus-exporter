@@ -9,14 +9,19 @@ export function defineRoutes(router: IRouter) {
       validate: false,
     },
     async (context, request, response) => {
+      let reqHeaders = {};
+      let reqHost = request.url.host || '127.0.0.1';
+      let reqPort = request.url.port || '5601';
+      let reqProto = request.url.protocol || 'http';
+      let reqUrl = `${reqProto}://${reqHost}:${reqPort}/api/status`;
+
+      if (request.headers !== undefined
+          && request.headers.authorization !== undefined) {
+        reqHeaders = { 'Authorization': request.headers.authorization };
+      }
 
       const kibanaInternalStatus = await axios.get(
-        `${request.url.protocol}//${request.url.host}/api/status`,
-        {
-          headers: {
-            'Authorization': request.headers.authorization
-          }
-        }
+        reqUrl, { headers: reqHeaders }
       );
       
       const prometheusStats = formatter(kibanaInternalStatus.data);
