@@ -1,11 +1,13 @@
-# !! REWRITING FOR 7.10.0 !!
+# Kibana Prometheus Exporter
 
+Please note this plugin has underwent a re-write and will continue to do so until a statisfactory level of stability + testing has be realized.
 Once Installed, please visit http://localhost:5601/_prometheus/metrics
 
 <img src="https://raw.githubusercontent.com/pjhampton/kibana-prometheus-exporter/master/screenshots/kibana_prometheus.png" alt="kibana prometheus exporter">
 
 1. [Installing](#installing)
 1. [Docker](#docker)
+1. [Prometheus Config](#prometheus-config)
 1. [Metrics](#metrics)
 1. [SSL / Basic Auth](#ssl--basic-auth)
 1. [Versions](#versions)
@@ -26,6 +28,20 @@ You can install into your container with the following command (replace, or env 
 
 ```
 RUN bin/kibana-plugin install https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/${KIBANA_VERSION}/kibana-prometheus-exporter-${KIBANA_VERSION}.zip
+```
+
+## Prometheus Config
+
+Below is an example prometheus config. 
+
+```
+  - job_name: 'kibana'
+    metrics_path: '_prometheus/metrics'
+    static_configs:
+    - targets: ['localhost:5601']
+    basic_auth:
+      username: 'pjhampton'
+      password: 'redacted'
 ```
 
 ## Metrics 
