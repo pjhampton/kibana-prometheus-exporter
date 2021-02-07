@@ -11,7 +11,7 @@ export function defineRoutes(router: IRouter) {
     async (context, request, response) => {
       let reqHeaders = {};
       let reqProto = request.url.protocol || 'http:';
-      let reqHost = request.url.host.replace(/:\d+/, '') || '127.0.0.1';
+      let reqHost = request.url.host?.replace(/:\d+/, '') || '127.0.0.1';
       let reqPort = request.url.port || 5601;
       let reqUrl = `${reqProto}//${reqHost}:${reqPort}/api/status`;
 
