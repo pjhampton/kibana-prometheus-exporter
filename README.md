@@ -9,7 +9,6 @@ Once Installed, please visit http://localhost:5601/_prometheus/metrics
 1. [Docker](#docker)
 1. [Prometheus Config](#prometheus-config)
 1. [Metrics](#metrics)
-1. [SSL / Basic Auth](#ssl--basic-auth)
 1. [Versions](#versions)
 
 ## Installing
@@ -47,15 +46,6 @@ Below is an example prometheus config.
 ## Metrics 
 
 Details on the various exported metrics are documented on the [Github wiki page](https://github.com/pjhampton/kibana-prometheus-exporter/wiki).
-
-## SSL / Basic Auth
-
-SSL certs should not be an issue - as it is a mirror request the plugin does not check the servers identity. As for X-Pack and Basic Auth enablement, you can add the following to your **config/kibana.yml** and replace with your user and pass. The credentials are encoded in a Base64 header when sent over the wire.
-
-```
-kibana-prometheus-exporter.user: kibanaUser
-kibana-prometheus-exporter.pass: ohSoSecret!
-```
 
 ## Versions
 
