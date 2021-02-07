@@ -10,10 +10,9 @@ export function defineRoutes(router: IRouter) {
     },
     async (context, request, response) => {
       let reqHeaders = {};
+      let reqProto = request.url.protocol || 'http:';
       let reqHost = request.url.host || '127.0.0.1';
-      let reqPort = request.url.port || '5601';
-      let reqProto = request.url.protocol || 'http';
-      let reqUrl = `${reqProto}://${reqHost}:${reqPort}/api/status`;
+      let reqUrl = `${reqProto}//${reqHost}/api/status`;
 
       if (request.headers !== undefined
           && request.headers.authorization !== undefined) {
