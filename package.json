@@ -6,5 +6,8 @@
     "build": "yarn plugin-helpers build",
     "plugin-helpers": "node ../../scripts/plugin_helpers",
     "kbn": "node ../../scripts/kbn"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
   }
 }
