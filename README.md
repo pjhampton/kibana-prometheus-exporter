@@ -53,6 +53,8 @@ Details on the various exported metrics are documented on the [Github wiki page]
 
 | Release | MD5 / SHA1 / SHA256 / SHA512   | Release Artifact - This must match your Kibana version |
 |---------|-------------------------------|------------------------------------------------------------------|
+| 7.11.1   |  | [kibana-prometheus-exporter-7.11.1](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.11.1)   |
+| 7.11.0   |  | [kibana-prometheus-exporter-7.11.0](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.11.0)   |
 | 7.10.2   |  | [kibana-prometheus-exporter-7.10.2](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.10.2)   |
 | 7.10.1   |  | [kibana-prometheus-exporter-7.10.1](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.10.1)   |
 | 7.10.0   |  | [kibana-prometheus-exporter-7.10.0](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.10.0)   |
