@@ -34,13 +34,13 @@ RUN bin/kibana-plugin install https://github.com/pjhampton/kibana-prometheus-exp
 Below is an example prometheus config. 
 
 ```
-  - job_name: 'kibana'
-    metrics_path: '_prometheus/metrics'
-    static_configs:
-    - targets: ['localhost:5601']
-    basic_auth:
-      username: 'pjhampton'
-      password: 'redacted'
+- job_name: 'kibana'
+  metrics_path: '_prometheus/metrics'
+  static_configs:
+  - targets: ['localhost:5601']
+  basic_auth:
+    username: 'pjhampton'
+    password: 'redacted'
 ```
 
 ## Metrics 

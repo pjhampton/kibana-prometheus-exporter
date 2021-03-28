@@ -1,6 +1,7 @@
 import { IRouter } from '../../../../src/core/server';
 import formatter  from '../../common/formatter'
 import axios from 'axios';
+import https from 'https';
 
 export function defineRoutes(router: IRouter) {
   router.get(
@@ -20,8 +21,12 @@ export function defineRoutes(router: IRouter) {
         reqHeaders = { 'Authorization': request.headers.authorization };
       }
 
+      const agent = new https.Agent({  
+        rejectUnauthorized: false
+      });
+
       const kibanaInternalStatus = await axios.get(
-        reqUrl, { headers: reqHeaders }
+        reqUrl, { headers: reqHeaders, httpsAgent: agent }
       );
       
       const prometheusStats = formatter(kibanaInternalStatus.data);
