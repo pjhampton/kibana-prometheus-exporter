@@ -1,4 +1,4 @@
-<img src="/sceenshots/pd_banner.png" />
+<img src="./sceenshots/pd_banner.png" />
 
 # Kibana Prometheus Exporter
 
