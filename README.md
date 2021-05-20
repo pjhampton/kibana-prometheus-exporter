@@ -1,3 +1,5 @@
+<img src="/sceenshots/pd_banner.png" />
+
 # Kibana Prometheus Exporter
 
 Please note this plugin has underwent a re-write and will continue to do so until a statisfactory level of stability + testing has be realized.
