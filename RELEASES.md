@@ -1,3 +1,11 @@
+<p align="center">
+    <h1>🚀 Releases 🚀</h1>
+</p>
+
+Releases before 7.10.0 are no longer supported.
+
+---
+
 
 | Release | MD5 / SHA1 / SHA256 / SHA512   | Release Artifact - This must match your Kibana version |
 |---------|-------------------------------|------------------------------------------------------------------|
