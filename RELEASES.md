@@ -1,8 +1,8 @@
-<p align="center">
-    <h1>🚀 Releases 🚀</h1>
-</p>
+<img src=".github/kpe_banner.png" />
 
-Releases before 7.10.0 are no longer supported.
+<h1 align="center">🚀 Releases 🚀</h1>
+
+<p align="center">Releases before 7.10.0 are no longer supported by the maintainer.</p>
 
 ---
 
