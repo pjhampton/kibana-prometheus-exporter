@@ -65,4 +65,4 @@ Details on the various exported metrics are documented on the [Github wiki page]
 | 7.10.1   |  | [kibana-prometheus-exporter-7.10.1](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.10.1)   |
 | 7.10.0   |  | [kibana-prometheus-exporter-7.10.0](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.10.0)   |
 
-For releases older than 7.10.0 please see: [RELEASES.md]('./RELEASES.md')
+For releases older than 7.10.0 please see: [RELEASES.md](RELEASES.md)
