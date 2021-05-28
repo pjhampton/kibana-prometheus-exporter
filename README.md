@@ -1,9 +1,8 @@
 <img src=".github/kpe_banner.png" />
 
-# Kibana Prometheus Exporter
+<h1 align="center">️‍🔥 Kibana Prometheus Exporter ️‍🔥</h1>
 
-Please note this plugin has underwent a re-write and will continue to do so until a statisfactory level of stability + testing has be realized.
-Once Installed, please visit http://localhost:5601/_prometheus/metrics
+<p align="center">Once Installed, please visit http://localhost:5601/_prometheus/metrics</p>
 
 <img src="https://raw.githubusercontent.com/pjhampton/kibana-prometheus-exporter/master/screenshots/kibana_prometheus.png" alt="kibana prometheus exporter">
 
