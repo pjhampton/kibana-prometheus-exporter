@@ -1,6 +1,6 @@
 <img src=".github/kpe_banner.png" />
 
-<h1 align="center">️‍🔥 Kibana Prometheus Exporter ️‍🔥</h1>
+<h1 align="center">Kibana Prometheus Exporter</h1>
 
 <p align="center">Once Installed, please visit http://localhost:5601/_prometheus/metrics</p>
 
