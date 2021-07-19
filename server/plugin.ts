@@ -18,12 +18,11 @@ export class KibanaPrometheusExporterPlugin
   }
 
   public setup(core: CoreSetup) {
-    this.logger.debug('kibanaPrometheusExporter: Setup');
+    this.logger.debug('kibanaPrometheusExporter: Setting up');
+    const fullStatsURI = core.http.basePath.prepend("/api/status")
     const router = core.http.createRouter();
 
-    // Register server side APIs
-    defineRoutes(router);
-
+    defineRoutes(router, fullStatsURI);
     return {};
   }
 
@@ -32,5 +31,7 @@ export class KibanaPrometheusExporterPlugin
     return {};
   }
 
-  public stop() {}
+  public stop() {
+    this.logger.debug('kibanaPrometheusExporter: Stopped')
+  }
 }
