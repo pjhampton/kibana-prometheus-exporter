@@ -69,4 +69,4 @@ Details on the various exported metrics are documented on the [Github wiki page]
 | 7.10.1   | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.10.1/checksum.json) | [kibana-prometheus-exporter-7.10.1](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.10.1)   |
 | 7.10.0   | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.10.0/checksum.json) | [kibana-prometheus-exporter-7.10.0](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.10.0)   |
 
-<p align="center">For releases older than 7.10.0 please see: [RELEASES.md](RELEASES.md)</p>
+<p align="center">For releases older than 7.10.0 please see: <a href="RELEASES.md">RELEASES.md</a></p>
