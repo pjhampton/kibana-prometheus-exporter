@@ -1,6 +1,9 @@
 {
   "id": "kibanaPrometheusExporter",
   "version": "1.0.0",
+  "owner": {
+    "name": "PJ Hampton"
+  },
   "kibanaVersion": "kibana",
   "server": true,
   "ui": false,
