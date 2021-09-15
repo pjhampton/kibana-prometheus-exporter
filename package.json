@@ -1,9 +1,10 @@
 {
   "name": "kibanaPrometheusExporter",
-  "version": "7.14.1",
+  "version": "7.15.0",
   "private": true,
   "scripts": {
     "build": "yarn plugin-helpers build",
+    "clean": "rm -rf node_modules build",
     "plugin-helpers": "node ../../scripts/plugin_helpers",
     "kbn": "node ../../scripts/kbn"
   },
