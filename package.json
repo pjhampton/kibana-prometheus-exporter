@@ -9,6 +9,6 @@
     "kbn": "node ../../scripts/kbn"
   },
   "dependencies": {
-    "axios": "^0.23.0"
+    "axios": "^0.24.0"
   }
 }
