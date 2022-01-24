@@ -1,0 +1,69 @@
+version: '3.7'
+
+# Official Elastic Docker Images: https://www.docker.elastic.co/
+# Official Prometheus Image: https://hub.docker.com/r/prom/prometheus
+# Official Grafana Image: https://hub.docker.com/r/grafana/grafana
+services:
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.16.3
+    container_name: elasticsearch
+    environment:
+      - xpack.security.enabled=false
+      - discovery.type=single-node
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    cap_add:
+      - IPC_LOCK
+    volumes:
+      - elasticsearch-data:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+      - 9300:9300
+
+  kibana:
+    container_name: kibana
+    image: docker.elastic.co/kibana/kibana:7.16.3
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    ports:
+      - 5601:5601
+    depends_on:
+      - elasticsearch
+    command: 
+      - /bin/bash
+      - -c 
+      - |
+        bin/kibana-plugin install https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.16.3/kibanaPrometheusExporter-7.16.3.zip
+        bin/kibana &
+        sleep infinity
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    restart: unless-stopped
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--web.enable-lifecycle'
+    expose:
+      - 9090
+    ports:
+      - 9090:9090
+    depends_on:
+      - kibana
+
+volumes:
+  prometheus_data: {}
+  elasticsearch-data:
+    driver: local
