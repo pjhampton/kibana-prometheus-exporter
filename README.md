@@ -2,6 +2,12 @@
 
 <h1 align="center">Kibana Prometheus Exporter</h1>
 
+<p align="center">
+  <a href="https://snyk.io/test/github/pjhampton/kibana-prometheus-exporter">
+    <img src="https://snyk.io/test/github/pjhampton/kibana-prometheus-exporter/badge.svg" />
+  </a>
+</p>
+
 <p align="center">Once Installed, please visit http://localhost:5601/_prometheus/metrics</p>
 
 <img src="https://raw.githubusercontent.com/pjhampton/kibana-prometheus-exporter/master/screenshots/kibana_prometheus.png" alt="kibana prometheus exporter">
