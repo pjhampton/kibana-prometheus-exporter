@@ -9,6 +9,7 @@
     "kbn": "node ../../scripts/kbn"
   },
   "dependencies": {
+    "@braintree/sanitize-url": "^5.0.2",
     "axios": "^0.25.0"
   }
 }
