@@ -49,8 +49,8 @@ Below is an example prometheus config.
   static_configs:
   - targets: ['localhost:5601']
   basic_auth:
-    username: 'pjhampton'
-    password: 'redacted'
+    username: 'elastic'
+    password: 'changeme'
 ```
 
 ## Metrics 
@@ -63,6 +63,7 @@ Details on the various exported metrics are documented on the [Github wiki page]
 
 | Release | MD5 / SHA1 / SHA256 / SHA512   | Release Artifact - This must match your Kibana version |
 |---------|-------------------------------|------------------------------------------------------------------|
+| 7.17.0 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.17.0/checksum.json) | [kibana-prometheus-exporter-7.17.0](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.17.0)   |
 | 7.16.3 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.16.3/checksum.json) | [kibana-prometheus-exporter-7.16.3](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.16.3)   |
 | 7.16.2 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.16.2/checksum.json) | [kibana-prometheus-exporter-7.16.2](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.16.2)   |
 | 7.16.1 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.16.1/checksum.json) | [kibana-prometheus-exporter-7.16.1](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.16.1)   |
