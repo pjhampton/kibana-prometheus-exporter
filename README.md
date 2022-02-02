@@ -6,6 +6,9 @@
   <a href="https://snyk.io/test/github/pjhampton/kibana-prometheus-exporter">
     <img src="https://snyk.io/test/github/pjhampton/kibana-prometheus-exporter/badge.svg" />
   </a>
+  <a href="https://github.com/pjhampton/kibana-prometheus-exporter/actions/workflows/codeql-analysis.yml">
+    <img src="https://github.com/pjhampton/kibana-prometheus-exporter/actions/workflows/codeql-analysis.yml/badge.svg" />
+  </a>
 </p>
 
 <p align="center">Once Installed, please visit http://localhost:5601/_prometheus/metrics</p>
