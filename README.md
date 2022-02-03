@@ -13,7 +13,7 @@
 
 <p align="center">Once Installed, please visit http://localhost:5601/_prometheus/metrics</p>
 
-<img src="https://raw.githubusercontent.com/pjhampton/kibana-prometheus-exporter/master/screenshots/kibana_prometheus.png" alt="kibana prometheus exporter">
+<img src="https://raw.githubusercontent.com/pjhampton/kibana-prometheus-exporter/master/.github/kibana_prometheus.png" alt="kibana prometheus exporter">
 
 1. [Installing](#installing)
 1. [Docker](#docker)
