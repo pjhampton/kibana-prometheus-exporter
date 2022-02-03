@@ -2,3 +2,4 @@
 /build
 /target
 /node_modules
+/coverage

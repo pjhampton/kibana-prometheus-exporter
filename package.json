@@ -6,10 +6,15 @@
     "build": "yarn plugin-helpers build",
     "clean": "rm -rf node_modules build",
     "plugin-helpers": "node ../../scripts/plugin_helpers",
-    "kbn": "node ../../scripts/kbn"
+    "kbn": "node ../../scripts/kbn",
+    "test": "jest --coverage"
   },
   "dependencies": {
     "@braintree/sanitize-url": "^5.0.2",
     "axios": "^0.25.0"
+  },
+  "devDependencies": {
+    "codecov": "^3.8.3",
+    "jest": "^27.4.7"
   }
 }
