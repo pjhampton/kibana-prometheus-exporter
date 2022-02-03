@@ -4,10 +4,13 @@
 
 <p align="center">
   <a href="https://snyk.io/test/github/pjhampton/kibana-prometheus-exporter">
-    <img src="https://snyk.io/test/github/pjhampton/kibana-prometheus-exporter/badge.svg" />
+    <img src="https://snyk.io/test/github/pjhampton/kibana-prometheus-exporter/badge.svg" alt="Snyk Repo Badge" />
   </a>
   <a href="https://github.com/pjhampton/kibana-prometheus-exporter/actions/workflows/codeql-analysis.yml">
-    <img src="https://github.com/pjhampton/kibana-prometheus-exporter/actions/workflows/codeql-analysis.yml/badge.svg" />
+    <img src="https://github.com/pjhampton/kibana-prometheus-exporter/actions/workflows/codeql-analysis.yml/badge.svg" alt="CodeQL Repo Badge" />
+  </a>
+  <a href="https://github.com/pjhampton/kibana-prometheus-exporter/actions/workflows/codecov.yml">
+    <img src="https://github.com/pjhampton/kibana-prometheus-exporter/actions/workflows/codecov.yml/badge.svg" alt="CodeCov Repo Badge" />
   </a>
 </p>
 
