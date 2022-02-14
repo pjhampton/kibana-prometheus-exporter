@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@braintree/sanitize-url": "^5.0.2",
-    "axios": "^0.25.0"
+    "axios": "^0.26.0"
   },
   "devDependencies": {
     "jest": "^27.5.1"
