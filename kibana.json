@@ -2,7 +2,7 @@
   "id": "kibanaPrometheusExporter",
   "version": "1.0.0",
   "owner": {
-    "name": "PJ Hampton"
+    "name": "@pjhampton"
   },
   "kibanaVersion": "kibana",
   "server": true,

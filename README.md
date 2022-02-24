@@ -2,9 +2,21 @@
 
 <h1 align="center">Kibana Prometheus Exporter</h1>
 
+<p align="center">
+  <a href="https://snyk.io/test/github/pjhampton/kibana-prometheus-exporter">
+    <img src="https://snyk.io/test/github/pjhampton/kibana-prometheus-exporter/badge.svg" alt="Snyk Repo Badge" />
+  </a>
+  <a href="https://github.com/pjhampton/kibana-prometheus-exporter/actions/workflows/codeql-analysis.yml">
+    <img src="https://github.com/pjhampton/kibana-prometheus-exporter/actions/workflows/codeql-analysis.yml/badge.svg" alt="CodeQL Repo Badge" />
+  </a>
+  <a href="https://github.com/pjhampton/kibana-prometheus-exporter/actions/workflows/codecov.yml">
+    <img src="https://github.com/pjhampton/kibana-prometheus-exporter/actions/workflows/codecov.yml/badge.svg" alt="CodeCov Repo Badge" />
+  </a>
+</p>
+
 <p align="center">Once Installed, please visit http://localhost:5601/_prometheus/metrics</p>
 
-<img src="https://raw.githubusercontent.com/pjhampton/kibana-prometheus-exporter/master/screenshots/kibana_prometheus.png" alt="kibana prometheus exporter">
+<img src="https://raw.githubusercontent.com/pjhampton/kibana-prometheus-exporter/master/.github/kibana_prometheus.png" alt="kibana prometheus exporter">
 
 1. [Installing](#installing)
 1. [Docker](#docker)
@@ -40,8 +52,8 @@ Below is an example prometheus config.
   static_configs:
   - targets: ['localhost:5601']
   basic_auth:
-    username: 'pjhampton'
-    password: 'redacted'
+    username: 'elastic'
+    password: 'changeme'
 ```
 
 ## Metrics 
@@ -54,6 +66,11 @@ Details on the various exported metrics are documented on the [Github wiki page]
 
 | Release | MD5 / SHA1 / SHA256 / SHA512   | Release Artifact - This must match your Kibana version |
 |---------|-------------------------------|------------------------------------------------------------------|
+| 7.17.0 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.17.0/checksum.json) | [kibana-prometheus-exporter-7.17.0](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.17.0)   |
+| 7.16.3 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.16.3/checksum.json) | [kibana-prometheus-exporter-7.16.3](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.16.3)   |
+| 7.16.2 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.16.2/checksum.json) | [kibana-prometheus-exporter-7.16.2](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.16.2)   |
+| 7.16.1 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.16.1/checksum.json) | [kibana-prometheus-exporter-7.16.1](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.16.1)   |
+| 7.15.2 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.15.2/checksum.json) | [kibana-prometheus-exporter-7.15.2](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.15.2)   |
 | 7.15.1 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.15.1/checksum.json) | [kibana-prometheus-exporter-7.15.1](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.15.1)   |
 | 7.15.0 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.15.0/checksum.json) | [kibana-prometheus-exporter-7.15.0](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.15.0)   |
 | 7.14.1 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.14.1/checksum.json) | [kibana-prometheus-exporter-7.14.1](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.14.1)   |

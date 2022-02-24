@@ -1,0 +1,15 @@
+# demo config
+global:
+  # low scrape values for development testing
+  scrape_interval: 5s
+  evaluation_interval: 5s
+
+scrape_configs:
+
+  - job_name: 'kibana'
+    metrics_path: '_prometheus/metrics'
+    static_configs:
+    - targets: ['host.docker.internal:5601']
+    basic_auth:
+      username: 'elastic'
+      password: 'changeme'

@@ -1,14 +1,19 @@
 {
   "name": "kibanaPrometheusExporter",
-  "version": "7.15.0",
+  "version": "7.17.0",
   "private": true,
   "scripts": {
     "build": "yarn plugin-helpers build",
     "clean": "rm -rf node_modules build",
     "plugin-helpers": "node ../../scripts/plugin_helpers",
-    "kbn": "node ../../scripts/kbn"
+    "kbn": "node ../../scripts/kbn",
+    "test": "jest --coverage"
   },
   "dependencies": {
-    "axios": "^0.24.0"
+    "@braintree/sanitize-url": "^5.0.2",
+    "axios": "^0.26.0"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1"
   }
 }
