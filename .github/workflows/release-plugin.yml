@@ -31,3 +31,8 @@ jobs:
 
     - name: Print plugins directory
       run: ls -la plugins
+
+    - uses: borales/actions-yarn@v2.3.0
+      name: Set up Kibana Development Environment
+      with:
+        cmd: kbn bootstrap
