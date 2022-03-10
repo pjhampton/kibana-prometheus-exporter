@@ -66,8 +66,10 @@ Details on the various exported metrics are documented on the [Github wiki page]
 
 | Release | MD5 / SHA1 / SHA256 / SHA512   | Release Artifact - This must match your Kibana version |
 |---------|-------------------------------|------------------------------------------------------------------|
+| 8.1.0 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/8.1.0/checksum.json) | [kibana-prometheus-exporter-8.1.0](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/8.1.0)   |
 | 8.0.1 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/8.0.1/checksum.json) | [kibana-prometheus-exporter-8.0.1](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/8.0.1)   |
 | 8.0.0 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/8.0.0/checksum.json) | [kibana-prometheus-exporter-8.0.0](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/8.0.0)   |
+| 7.17.1 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.17.1/checksum.json) | [kibana-prometheus-exporter-7.17.1](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.17.1)   |
 | 7.17.0 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.17.0/checksum.json) | [kibana-prometheus-exporter-7.17.0](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.17.0)   |
 | 7.16.3 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.16.3/checksum.json) | [kibana-prometheus-exporter-7.16.3](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.16.3)   |
 | 7.16.2 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.16.2/checksum.json) | [kibana-prometheus-exporter-7.16.2](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.16.2)   |
