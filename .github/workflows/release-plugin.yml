@@ -32,6 +32,15 @@ jobs:
     - name: Print plugins directory
       run: ls -la plugins
 
+    - name: Read .nvmrc
+      run: echo "##[set-output name=NVMRC;]$(cat .nvmrc)"
+      id: nvm
+
+    - name: Use Node.js (.nvmrc)
+      uses: actions/setup-node@v1
+      with:
+        node-version: "${{ steps.nvm.outputs.NVMRC }}"
+
     - uses: borales/actions-yarn@v2.3.0
       name: Set up Kibana Development Environment
       with:
