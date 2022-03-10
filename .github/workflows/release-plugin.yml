@@ -1,0 +1,32 @@
+name: "Release Plugin"
+
+on: workflow_dispatch
+
+jobs:
+  release_plugin:
+    name: Release Plugin
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    strategy:
+      fail-fast: false
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        name: elastic/kibana
+        ref: refs/heads/main
+
+    - name: Checkout repository
+      uses: actions/checkout@v2
+        with:
+          path: 'plugins'
+
+    - name: Print root directory
+      run: ls -la
+
+    - name: Print plugins directory
+      run: ls -la plugins
