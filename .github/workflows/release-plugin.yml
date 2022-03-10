@@ -41,7 +41,5 @@ jobs:
       with:
         node-version: "${{ steps.nvm.outputs.NVMRC }}"
 
-    - uses: borales/actions-yarn@v2.3.0
-      name: Set up Kibana Development Environment
-      with:
-        cmd: kbn bootstrap
+    - name: Set up Kibana Development Environment
+      run: yarn kbn bootstrap
