@@ -20,10 +20,11 @@ jobs:
         name: elastic/kibana
         ref: refs/heads/main
 
-    - name: Checkout repository
-      uses: actions/checkout@v2
-        with:
-          path: 'plugins'
+    - uses: actions/checkout@v2
+      with:
+        name: pjhampton/kibana-prometheus-exporter
+        ref: refs/heads/main
+        path: 'plugins'
 
     - name: Print root directory
       run: ls -la
