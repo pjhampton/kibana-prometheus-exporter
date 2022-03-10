@@ -17,7 +17,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        name: elastic/kibana
+        repository: elastic/kibana
         ref: refs/heads/main
 
     - uses: actions/checkout@v2
