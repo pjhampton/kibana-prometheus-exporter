@@ -27,10 +27,7 @@ jobs:
         path: 'plugins/kibana-prometheus-exporter'
 
     - name: Print root directory
-      run: ls -la
-
-    - name: Print plugins directory
-      run: ls -la plugins
+      run: sudo apt-get install -y jq
 
     - name: Read .nvmrc
       run: echo "##[set-output name=NVMRC;]$(cat .nvmrc)"
@@ -47,3 +44,8 @@ jobs:
     - name: Build plugin
       working-directory: plugins/kibana-prometheus-exporter
       run: echo "8.2.0" | yarn build
+    
+    - name: Create checksum manifest
+      working-directory: plugins/kibana-prometheus-exporter
+      run: ./release/checksum ./build/*.zip
+
