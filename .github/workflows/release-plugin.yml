@@ -45,5 +45,5 @@ jobs:
       run: yarn kbn bootstrap
       
     - name: Build plugin
-      working-directory: ./plugins/kibana-prometheus-exporter
+      working-directory: plugins/kibana-prometheus-exporter
       run: echo "8.2.0" | yarn build
