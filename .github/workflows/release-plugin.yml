@@ -24,7 +24,7 @@ jobs:
       with:
         name: pjhampton/kibana-prometheus-exporter
         ref: refs/heads/main
-        path: 'plugins'
+        path: 'plugins/kibana-prometheus-exporter'
 
     - name: Print root directory
       run: ls -la
