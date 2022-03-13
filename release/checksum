@@ -1,0 +1,19 @@
+#!/bin/bash
+
+HASH_MD5=$(md5 $1 | awk {'print $4'})
+HASH_SHA1=$(shasum -a 1 $1 | awk {'print $1'})
+HASH_SHA256=$(shasum -a 256 $1 | awk {'print $1'})
+HASH_SHA512=$(shasum -a 512 $1 | awk {'print $1'})
+
+CHECKSUM_PAYLOAD="""
+{
+  \"artifact\": \"$1\",
+  \"author\": \"https://github.com/pjhampton\",
+  \"md5\": \"$HASH_MD5\",
+  \"sha1\": \"$HASH_SHA1\",
+  \"sha256\": \"$HASH_SHA256\",
+  \"sha512\": \"$HASH_SHA512\"
+}
+"""
+
+echo $CHECKSUM_PAYLOAD | jq
