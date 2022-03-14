@@ -8,7 +8,7 @@ export default function (info : any) {
     metrics.set('kibana_heap_used_in_bytes', info.metrics.process.memory.heap.used_in_bytes || 0);
     metrics.set('kibana_response_average', info.metrics.response_times.avg_in_millis || 0);
     metrics.set('kibana_response_max', info.metrics.response_times.max_in_millis || 0);
-    metrics.set('kibana_concurrent_connections', info.metrics.concurrent_connections || '0');
+    metrics.set('kibana_concurrent_connections', info.metrics.concurrent_connections || 0);
     metrics.set('kibana_requests_total', info.metrics.requests.total || 0);
     metrics.set('kibana_requests_disconnects', info.metrics.requests.disconnects || 0);
     metrics.set('kibana_os_load1', info.metrics.os.load['1m'] || 0);
