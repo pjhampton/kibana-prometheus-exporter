@@ -49,3 +49,10 @@ jobs:
       working-directory: plugins/kibana-prometheus-exporter
       run: ./release/checksum ./build/*.zip
 
+    - name: Create release notes
+      working-directory: plugins/kibana-prometheus-exporter
+      run: cp ./release/RELEASE_TEMPLATE.md ./build && ./release/create_release_template ./build/RELEASE_TEMPLATE.md
+
+    - name: Sanity Check
+      working-directory: plugins/kibana-prometheus-exporter/build
+      run: ls -la && cat RELEASE_TEMPLATE.md
