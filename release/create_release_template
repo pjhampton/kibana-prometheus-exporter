@@ -1,0 +1,4 @@
+#!/bin/bash
+
+RELEASE_VERSION=$(jq -r .version kibana.json)
+sed -i "s/VERSION/$RELEASE_VERSION/g"
