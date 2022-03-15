@@ -70,7 +70,7 @@ jobs:
         prerelease: false
 
     - name: Upload release artifact (Kibana Plugin)
-      id: upload-release-asset 
+      id: upload-release-asset-plugin
       uses: actions/upload-release-asset@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -81,7 +81,7 @@ jobs:
         asset_content_type: application/zip
 
     - name: Upload release artifact (Checksum manifest)
-      id: upload-release-asset 
+      id: upload-release-asset-checksum-manifest
       uses: actions/upload-release-asset@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
