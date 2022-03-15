@@ -56,3 +56,37 @@ jobs:
     - name: Sanity Check
       working-directory: plugins/kibana-prometheus-exporter/build
       run: ls -la && cat RELEASE_TEMPLATE.md
+
+    - name: Create release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: 8.2.0
+        release_name: 8.2.0
+        body_path: plugins/kibana-prometheus-exporter/build/RELEASE_TEMPLATE.md
+        draft: false
+        prerelease: false
+
+    - name: Upload release artifact (Kibana Plugin)
+      id: upload-release-asset 
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: plugins/kibana-prometheus-exporter/build/kibanaPrometheusExporter-8.2.0.zip
+        asset_name: kibanaPrometheusExporter-8.2.0.zip
+        asset_content_type: application/zip
+
+    - name: Upload release artifact (Checksum manifest)
+      id: upload-release-asset 
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: plugins/kibana-prometheus-exporter/build/checksum.json
+        asset_name: checksum.json
+        asset_content_type: application/json
