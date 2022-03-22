@@ -65,7 +65,7 @@ jobs:
       with:
         tag_name: 8.2.0
         release_name: 8.2.0
-        bodyFile: plugins/kibana-prometheus-exporter/build/RELEASE_TEMPLATE.md
+        body_path: plugins/kibana-prometheus-exporter/build/RELEASE_TEMPLATE.md
         draft: true
         prerelease: false
 
