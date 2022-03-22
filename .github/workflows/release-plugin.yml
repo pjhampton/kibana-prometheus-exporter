@@ -2,6 +2,8 @@ name: "Release Plugin"
 
 on: workflow_dispatch
 
+permissions: write-all
+
 jobs:
   release_plugin:
     name: Release Plugin
