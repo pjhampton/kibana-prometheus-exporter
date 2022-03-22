@@ -6,9 +6,7 @@ jobs:
   release_plugin:
     name: Release Plugin
     runs-on: ubuntu-latest
-    permissions:
-      actions: write
-      security-events: write
+    permissions: write-all
 
     strategy:
       fail-fast: false
