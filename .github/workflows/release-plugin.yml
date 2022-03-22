@@ -2,15 +2,12 @@ name: "Release Plugin"
 
 on: workflow_dispatch
 
-permissions: write-all
-
 jobs:
   release_plugin:
     name: Release Plugin
     runs-on: ubuntu-latest
     permissions:
-      actions: read
-      contents: read
+      actions: write-all
       security-events: write
 
     strategy:
