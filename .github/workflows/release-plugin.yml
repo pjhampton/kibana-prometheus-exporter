@@ -7,7 +7,7 @@ jobs:
     name: Release Plugin
     runs-on: ubuntu-latest
     permissions:
-      actions: write-all
+      actions: write
       security-events: write
 
     strategy:
