@@ -1,7 +1,6 @@
-import { IRouter } from '../../../../src/core/server'
-import formatter  from '../../common/formatter'
-import axios from 'axios'
-import agent from '../helpers/server_client'
+import { IRouter } from '../../../../src/core/server';
+import formatter  from '../../common/formatter';
+import fetch from 'node-fetch';
 
 export function defineRoutes(router: IRouter, statsURI: string) {
   router.get(
@@ -21,17 +20,22 @@ export function defineRoutes(router: IRouter, statsURI: string) {
         reqHeaders = { 'Authorization': request.headers.authorization };
       }
 
-      const kibanaInternalStatus = await axios.get(
-        reqUrl, { headers: reqHeaders, httpsAgent: agent }
-      );
-      
-      const prometheusStats = formatter(kibanaInternalStatus.data);
+      const kbnInternalStatusRequest = await fetch(reqUrl, {
+        method: 'get',
+        headers: {
+          'Content-Type': 'application/json',
+          ...reqHeaders
+        }
+      });
+
+      const kbnMetrics = await kbnInternalStatusRequest.json();
+      const promMetrics = formatter(kbnMetrics);
 
       return response.ok({
         headers: {
           'Content-Type': 'text/plain',
         },
-        body: prometheusStats,
+        body: promMetrics,
       });
     }
   );

@@ -1,6 +1,6 @@
 {
   "name": "kibanaPrometheusExporter",
-  "version": "8.1.0",
+  "version": "8.1.2",
   "private": true,
   "scripts": {
     "build": "yarn plugin-helpers build",
@@ -10,7 +10,6 @@
     "test": "jest --coverage"
   },
   "dependencies": {
-    "axios": "^0.26.1"
   },
   "devDependencies": {
     "jest": "^27.5.1"
