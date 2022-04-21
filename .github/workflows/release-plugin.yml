@@ -44,11 +44,11 @@ jobs:
     
     - name: Create checksum manifest
       working-directory: plugins/kibana-prometheus-exporter/build
-      run: ../release/checksum ./*.zip >checksum.json
+      run: ../utils/checksum ./*.zip >checksum.json
 
     - name: Create release notes
       working-directory: plugins/kibana-prometheus-exporter
-      run: cp ./release/RELEASE_TEMPLATE.md ./build && ./release/create_release_template ./build/RELEASE_TEMPLATE.md
+      run: cp ./utils/RELEASE_TEMPLATE.md ./build && ./utils/create_release_template ./build/RELEASE_TEMPLATE.md
 
     - name: Sanity Check
       working-directory: plugins/kibana-prometheus-exporter/build
