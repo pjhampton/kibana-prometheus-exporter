@@ -10,7 +10,6 @@
     "test": "jest --coverage"
   },
   "dependencies": {
-    "@braintree/sanitize-url": "^6.0.0",
     "axios": "^0.26.1"
   },
   "devDependencies": {
