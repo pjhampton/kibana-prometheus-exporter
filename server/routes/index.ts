@@ -8,7 +8,7 @@ export function defineRoutes(router: IRouter, statsURI: string) {
       path: '/_prometheus/metrics',
       validate: false,
     },
-    async (context, request, response) => {
+    async (_, request, response) => {
       let reqHeaders = {};
       let reqProto = request.url.protocol || 'http:';
       let reqHost = request.url.host?.replace(/:\d+/, '') || '127.0.0.1';
