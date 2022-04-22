@@ -1,0 +1,31 @@
+name: Release Wiki
+
+on: 
+
+on:
+  workflow_dispatch
+  push:
+    paths:
+      - 'wiki/**'
+    branches:
+      - main
+
+jobs:
+  release_plugin:
+    name: Release Wiki
+    runs-on: ubuntu-latest
+    permissions: write-all
+
+  strategy:
+    fail-fast: false
+
+  steps:
+  - uses: actions/checkout@v2
+
+  - name: Update Wiki
+    uses: Andrew-Chen-Wang/github-wiki-action@v2
+    env:
+      WIKI_DIR: wiki/
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_MAIL: ${{ secrets.YOUR_EMAIL }}
+      GH_NAME: ${{ github.repository_owner }}
