@@ -1,9 +1,6 @@
 name: Release Wiki
 
-on: 
-
 on:
-  workflow_dispatch
   push:
     paths:
       - 'wiki/**'
@@ -21,7 +18,7 @@ jobs:
 
   steps:
   - uses: actions/checkout@v2
-
+ 
   - name: Update Wiki
     uses: Andrew-Chen-Wang/github-wiki-action@v2
     env:
