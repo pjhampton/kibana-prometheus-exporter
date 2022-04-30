@@ -2,6 +2,8 @@ name: Release Wiki
 
 on:
   push:
+    paths:
+      - 'wiki/**'
     branches:
       - main
 
@@ -15,14 +17,14 @@ jobs:
       fail-fast: false
 
     steps:
-      - name: Check out Prometheus Exporter
+      - name: Check out Kibana Prometheus Exporter
         uses: actions/checkout@v2
         with:
           repository: "pjhampton/kibana-prometheus-exporter"
           ref: main
           path: "kibana-prometheus-exporter"
 
-      - name: Check out Prometheus Exporter Wiki
+      - name: Check out Kibana Prometheus Exporter Wiki
         uses: actions/checkout@v2
         with:
           repository: "pjhampton/kibana-prometheus-exporter.wiki"
