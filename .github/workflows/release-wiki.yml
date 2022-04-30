@@ -18,11 +18,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-  
-    - name: Update Wiki
-      uses: Andrew-Chen-Wang/github-wiki-action@v2
-      env:
-        WIKI_DIR: wiki/
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        GH_MAIL: ${{ secrets.COMMIT_EMAIL }}
-        GH_NAME: ${{ github.repository_owner }}
+
+    - name: Sync Wiki
+      uses: joeizzard/action-wiki-sync@master
+      with:
+        username: pjhampton
+        access_token: ${{ secrets.GITHUB_TOKEN }}
+        wiki_folder: wiki
+        commit_username: 'pjhampton'
+        commit_email: 'pjhampton@users.noreply.github.com'
+        commit_message: 'action: wiki sync'
