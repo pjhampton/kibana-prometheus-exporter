@@ -2,8 +2,6 @@ name: Release Wiki
 
 on:
   push:
-    paths:
-      - 'wiki/**'
     branches:
       - main
 
@@ -17,17 +15,31 @@ jobs:
       fail-fast: false
 
     steps:
-    - name: Trust push user
-      run: git config --global --add safe.directory /wiki
+      - name: Check out Prometheus Exporter
+        uses: actions/checkout@v2
+        with:
+          repository: "pjhampton/kibana-prometheus-exporter"
+          ref: main
+          path: "kibana-prometheus-exporter"
 
-    - uses: actions/checkout@v2
+      - name: Check out Prometheus Exporter Wiki
+        uses: actions/checkout@v2
+        with:
+          repository: "pjhampton/kibana-prometheus-exporter.wiki"
+          ref: main
+          path: "kibana-prometheus-exporter.wiki"
 
-    - name: Sync Wiki
-      uses: joeizzard/action-wiki-sync@master
-      with:
-        username: pjhampton
-        access_token: ${{ secrets.GITHUB_TOKEN }}
-        wiki_folder: wiki
-        commit_username: 'pjhampton'
-        commit_email: 'pjhampton@users.noreply.github.com'
-        commit_message: 'action: wiki sync'
+      - name: Configure Git
+        run: |
+          git config --global --add safe.directory /kibana-prometheus-exporter.wiki
+          git config --global user.email "pjhampton@users.noreply.github.com"
+          git config --global user.name "pjhampton"
+          
+      - name: Copy wiki files
+        run: cp -a kibana-prometheus-exporter/wiki kibana-prometheus-exporter.wiki
+
+      - name: Update wiki remote
+        run: |
+          git add .
+          git commit -m "action: Update Wiki"
+          git push origin master
