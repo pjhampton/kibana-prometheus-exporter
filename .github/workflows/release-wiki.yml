@@ -18,7 +18,7 @@ jobs:
 
     steps:
     - name: Trust push user
-      run: git config --global --add safe.directory *
+      run: git config --global --add safe.directory /wiki
 
     - uses: actions/checkout@v2
 
