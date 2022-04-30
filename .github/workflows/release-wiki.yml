@@ -39,6 +39,7 @@ jobs:
         run: cp -a kibana-prometheus-exporter/wiki kibana-prometheus-exporter.wiki
 
       - name: Update wiki remote
+        working-directory: kibana-prometheus-exporter.wiki
         run: |
           git add .
           git commit -m "action: Update Wiki"
