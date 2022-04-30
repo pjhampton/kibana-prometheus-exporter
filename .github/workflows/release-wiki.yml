@@ -36,7 +36,11 @@ jobs:
           git config --global --add safe.directory /kibana-prometheus-exporter.wiki
           git config --global user.email "pjhampton@users.noreply.github.com"
           git config --global user.name "pjhampton"
-          
+
+      - name: Clean wiki
+        working-directory: kibana-prometheus-exporter.wiki
+        run: rm -rf ./*
+  
       - name: Copy wiki files
         run: cp -a kibana-prometheus-exporter/wiki kibana-prometheus-exporter.wiki
 
