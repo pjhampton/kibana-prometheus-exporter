@@ -12,6 +12,9 @@
   <a href="https://github.com/pjhampton/kibana-prometheus-exporter/actions/workflows/codecov.yml">
     <img src="https://github.com/pjhampton/kibana-prometheus-exporter/actions/workflows/codecov.yml/badge.svg" alt="CodeCov Repo Badge" />
   </a>
+  <a href="https://github.com/pjhampton/kibana-prometheus-exporter/actions/workflows/release-wiki.yml">
+    <img src="https://github.com/pjhampton/kibana-prometheus-exporter/actions/workflows/release-wiki.yml/badge.svg" alt="Release Wiki" />
+  </a>
 </p>
 
 <p align="center">Once Installed, please visit http://localhost:5601/_prometheus/metrics</p>
