@@ -51,6 +51,7 @@ Below is an example prometheus config.
 
 ```
 - job_name: 'kibana'
+  scrape_interval: 10s
   metrics_path: '_prometheus/metrics'
   static_configs:
   - targets: ['localhost:5601']
