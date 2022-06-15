@@ -1,6 +1,7 @@
 import { IRouter } from '../../../../src/core/server';
 import formatter  from '../../common/formatter';
 import fetch from 'node-fetch';
+import httpsAgent from './http_utils';
 
 export function defineRoutes(router: IRouter, statsURI: string) {
   router.get(
@@ -20,7 +21,9 @@ export function defineRoutes(router: IRouter, statsURI: string) {
         reqHeaders = { 'Authorization': request.headers.authorization };
       }
 
+      const agent = reqProto === 'https:' ? httpsAgent : undefined;
       const kbnInternalStatusRequest = await fetch(reqUrl, {
+        agent,
         method: 'get',
         headers: {
           'Content-Type': 'application/json',

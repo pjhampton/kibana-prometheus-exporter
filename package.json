@@ -8,9 +8,5 @@
     "plugin-helpers": "node ../../scripts/plugin_helpers",
     "kbn": "node ../../scripts/kbn",
     "test": "jest --coverage"
-  },
-  "dependencies": {
-  },
-  "devDependencies": {
   }
 }
