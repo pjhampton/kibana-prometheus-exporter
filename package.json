@@ -12,6 +12,5 @@
   "dependencies": {
   },
   "devDependencies": {
-    "jest": "^28.1.1"
   }
 }
