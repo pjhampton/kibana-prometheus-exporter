@@ -2,13 +2,27 @@
 
 <h1 align="center">🚀 Releases 🚀</h1>
 
-<p align="center">Releases before 7.10.0 are no longer supported by the maintainer.</p>
+<p align="center">Releases before 8.0.0 are no longer supported by the maintainer.</p>
 
 ---
 
-
 | Release | MD5 / SHA1 / SHA256 / SHA512   | Release Artifact - This must match your Kibana version |
 |---------|-------------------------------|------------------------------------------------------------------|
+| 7.17.4 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.17.4/checksum.json) | [kibana-prometheus-exporter-7.17.4](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.17.4)   |
+| 7.17.3 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.17.3/checksum.json) | [kibana-prometheus-exporter-7.17.3](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.17.3)   |
+| 7.17.2 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.17.2/checksum.json) | [kibana-prometheus-exporter-7.17.2](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.17.2)   |
+| 7.17.1 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.17.1/checksum.json) | [kibana-prometheus-exporter-7.17.1](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.17.1)   |
+| 7.17.0 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.17.0/checksum.json) | [kibana-prometheus-exporter-7.17.0](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.17.0)   |
+| 7.16.3 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.16.3/checksum.json) | [kibana-prometheus-exporter-7.16.3](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.16.3)   |
+| 7.16.2 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.16.2/checksum.json) | [kibana-prometheus-exporter-7.16.2](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.16.2)   |
+| 7.16.1 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.16.1/checksum.json) | [kibana-prometheus-exporter-7.16.1](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.16.1)   |
+| 7.15.2 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.15.2/checksum.json) | [kibana-prometheus-exporter-7.15.2](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.15.2)   |
+| 7.15.1 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.15.1/checksum.json) | [kibana-prometheus-exporter-7.15.1](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.15.1)   |
+| 7.15.0 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.15.0/checksum.json) | [kibana-prometheus-exporter-7.15.0](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.15.0)   |
+| 7.14.1 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.14.1/checksum.json) | [kibana-prometheus-exporter-7.14.1](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.14.1)   |
+| 7.14.0 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.14.0/checksum.json) | [kibana-prometheus-exporter-7.14.0](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.14.0)   |
+| 7.13.4   | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.13.4/checksum.json) | [kibana-prometheus-exporter-7.13.4](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.13.4)   |
+| 7.13.3   | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.13.3/checksum.json) | [kibana-prometheus-exporter-7.13.3](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.13.3)   |
 | 7.13.2   | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.13.2/checksum.json) | [kibana-prometheus-exporter-7.13.2](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.13.2)   |
 | 7.13.1   | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/7.13.1/checksum.json) | [kibana-prometheus-exporter-7.13.1](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.13.1)   |
 | 7.13.0   |  | [kibana-prometheus-exporter-7.13.0](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/7.13.0)   |
