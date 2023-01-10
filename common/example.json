@@ -1,0 +1,2627 @@
+{
+	"process": {
+		"memory": {
+			"heap": {
+				"total_bytes": 1420214272,
+				"used_bytes": 599224584,
+				"size_limit": 4345298944
+			},
+			"resident_set_size_bytes": 1398407168
+		},
+		"pid": 33597,
+		"event_loop_delay": 10.966282149779735,
+		"event_loop_delay_histogram": {
+			"min": 9.076736,
+			"max": 18.087935,
+			"mean": 10.966282149779735,
+			"exceeds": 0,
+			"stddev": 0.6863926687664118,
+			"from_timestamp": "2023-01-10T13:52:04.117Z",
+			"last_updated_at": "2023-01-10T13:52:09.102Z",
+			"percentiles": {
+				"50": 11.042815,
+				"75": 11.059199,
+				"95": 11.100159,
+				"99": 11.943935
+			}
+		},
+		"uptime_ms": 224855.840167
+	},
+	"processes": [{
+		"memory": {
+			"heap": {
+				"total_bytes": 1420214272,
+				"used_bytes": 599224584,
+				"size_limit": 4345298944
+			},
+			"resident_set_size_bytes": 1398407168
+		},
+		"pid": 33597,
+		"event_loop_delay": 10.966282149779735,
+		"event_loop_delay_histogram": {
+			"min": 9.076736,
+			"max": 18.087935,
+			"mean": 10.966282149779735,
+			"exceeds": 0,
+			"stddev": 0.6863926687664118,
+			"from_timestamp": "2023-01-10T13:52:04.117Z",
+			"last_updated_at": "2023-01-10T13:52:09.102Z",
+			"percentiles": {
+				"50": 11.042815,
+				"75": 11.059199,
+				"95": 11.100159,
+				"99": 11.943935
+			}
+		},
+		"uptime_ms": 224855.840167
+	}],
+	"os": {
+		"platform": "darwin",
+		"platform_release": "darwin-21.6.0",
+		"load": {
+			"1m": 3.80810546875,
+			"5m": 5.63427734375,
+			"15m": 3.86181640625
+		},
+		"memory": {
+			"total_bytes": 17179869184,
+			"free_bytes": 110395392,
+			"used_bytes": 17069473792
+		},
+		"uptime_ms": 143244000
+	},
+	"elasticsearch_client": {
+		"total_active_sockets": 0,
+		"total_idle_sockets": 4,
+		"total_queued_requests": 0
+	},
+	"requests": {
+		"disconnects": 0,
+		"total": 1,
+		"status_codes": {
+			"200": 1
+		}
+	},
+	"response_times": {
+		"avg_ms": 42,
+		"max_ms": 42
+	},
+	"concurrent_connections": 2,
+	"kibana": {
+		"uuid": "5b2de169-2785-441b-ae8c-186a1936b17d",
+		"name": "Petes-MacBook-Pro.local",
+		"index": ".kibana",
+		"host": "localhost",
+		"locale": "en",
+		"transport_address": "localhost:5601",
+		"version": "8.7.0",
+		"snapshot": false,
+		"status": "green"
+	},
+	"last_updated": "2023-01-10T13:52:09.114Z",
+	"collection_interval_ms": 5000,
+	"usage": {
+		"task_manager": {
+			"ephemeral_tasks_enabled": false,
+			"ephemeral_request_capacity": 10,
+			"ephemeral_stats": {
+				"status": "",
+				"queued_tasks": {
+					"p_50": 0,
+					"p_90": 0,
+					"p_95": 0,
+					"p_99": 0
+				},
+				"load": {
+					"p_50": 0,
+					"p_90": 0,
+					"p_95": 0,
+					"p_99": 0
+				},
+				"executions_per_cycle": {
+					"p_50": 0,
+					"p_90": 0,
+					"p_95": 0,
+					"p_99": 0
+				}
+			},
+			"task_type_exclusion": [],
+			"failed_tasks": 0,
+			"recurring_tasks": {
+				"actual_service_time": 12095,
+				"adjusted_service_time": 132000
+			},
+			"adhoc_tasks": {
+				"actual_service_time": 247,
+				"adjusted_service_time": 12000
+			},
+			"capacity": 200
+		},
+		"cloud": {
+			"is_cloud_enabled": false
+		},
+		"ui_counters": {
+			"daily_events": []
+		},
+		"usage_counters": {
+			"daily_events": [{
+				"domain_id": "ebt_counters.elastic_v3_server",
+				"counter_name": "core-overall_status_changed",
+				"counter_type": "succeeded_200",
+				"last_updated_at": "2023-01-10T13:50:10.823Z",
+				"from_timestamp": "2023-01-10T00:00:00Z",
+				"total": 3
+			}, {
+				"domain_id": "ebt_counters.elastic_v3_server",
+				"counter_name": "performance_metric",
+				"counter_type": "succeeded_200",
+				"last_updated_at": "2023-01-10T13:50:10.823Z",
+				"from_timestamp": "2023-01-10T00:00:00Z",
+				"total": 1
+			}, {
+				"domain_id": "ebt_counters.elastic_v3_server",
+				"counter_name": "kibana_started",
+				"counter_type": "succeeded_200",
+				"last_updated_at": "2023-01-10T13:50:10.823Z",
+				"from_timestamp": "2023-01-10T00:00:00Z",
+				"total": 1
+			}, {
+				"domain_id": "securitySolution",
+				"counter_name": "security_telemetry-sender-payloads-task-metrics",
+				"counter_type": "200",
+				"last_updated_at": "2023-01-10T13:50:10.822Z",
+				"from_timestamp": "2023-01-10T00:00:00Z",
+				"total": 8
+			}, {
+				"domain_id": "securitySolution",
+				"counter_name": "security_telemetry-sender-payloads-task-metrics",
+				"counter_type": "docs_sent",
+				"last_updated_at": "2023-01-10T13:50:10.822Z",
+				"from_timestamp": "2023-01-10T00:00:00Z",
+				"total": 8
+			}, {
+				"domain_id": "ebt_counters.client",
+				"counter_name": "core-overall_status_changed",
+				"counter_type": "sent_to_shipper_OK",
+				"last_updated_at": "2023-01-10T13:50:10.822Z",
+				"from_timestamp": "2023-01-10T00:00:00Z",
+				"total": 3
+			}, {
+				"domain_id": "ebt_counters.client",
+				"counter_name": "core-overall_status_changed",
+				"counter_type": "enqueued_enqueued",
+				"last_updated_at": "2023-01-10T13:50:10.822Z",
+				"from_timestamp": "2023-01-10T00:00:00Z",
+				"total": 3
+			}, {
+				"domain_id": "securitySolution",
+				"counter_name": "telemetry_endpoint_alert",
+				"counter_type": "endpoint_alert_count",
+				"last_updated_at": "2023-01-10T13:50:10.819Z",
+				"from_timestamp": "2023-01-10T00:00:00Z",
+				"total": 1
+			}, {
+				"domain_id": "ebt_counters.client",
+				"counter_name": "performance_metric",
+				"counter_type": "sent_to_shipper_OK",
+				"last_updated_at": "2023-01-10T13:50:05.815Z",
+				"from_timestamp": "2023-01-10T00:00:00Z",
+				"total": 1
+			}, {
+				"domain_id": "ebt_counters.client",
+				"counter_name": "kibana_started",
+				"counter_type": "sent_to_shipper_OK",
+				"last_updated_at": "2023-01-10T13:50:05.814Z",
+				"from_timestamp": "2023-01-10T00:00:00Z",
+				"total": 1
+			}, {
+				"domain_id": "ebt_counters.client",
+				"counter_name": "performance_metric",
+				"counter_type": "enqueued_enqueued",
+				"last_updated_at": "2023-01-10T13:50:05.813Z",
+				"from_timestamp": "2023-01-10T00:00:00Z",
+				"total": 1
+			}, {
+				"domain_id": "ebt_counters.client",
+				"counter_name": "kibana_started",
+				"counter_type": "enqueued_enqueued",
+				"last_updated_at": "2023-01-10T13:50:05.811Z",
+				"from_timestamp": "2023-01-10T00:00:00Z",
+				"total": 1
+			}]
+		},
+		"kibana": {
+			"index": ".kibana",
+			"dashboard": {
+				"total": 0
+			},
+			"visualization": {
+				"total": 0
+			},
+			"search": {
+				"total": 0
+			},
+			"index_pattern": {
+				"total": 0
+			},
+			"graph_workspace": {
+				"total": 0
+			}
+		},
+		"saved_objects_counts": {
+			"total": 131,
+			"by_type": [{
+				"type": "epm-packages-assets",
+				"count": 101
+			}, {
+				"type": "usage-counters",
+				"count": 13
+			}, {
+				"type": "canvas-workpad-template",
+				"count": 5
+			}, {
+				"type": "exception-list-agnostic",
+				"count": 2
+			}, {
+				"type": "apm-telemetry",
+				"count": 1
+			}, {
+				"type": "cases-telemetry",
+				"count": 1
+			}, {
+				"type": "config",
+				"count": 1
+			}, {
+				"type": "epm-packages",
+				"count": 1
+			}, {
+				"type": "event_loop_delays_daily",
+				"count": 1
+			}, {
+				"type": "ingest-download-sources",
+				"count": 1
+			}, {
+				"type": "ingest-outputs",
+				"count": 1
+			}, {
+				"type": "ingest_manager_settings",
+				"count": 1
+			}, {
+				"type": "ml-trained-model",
+				"count": 1
+			}, {
+				"type": "space",
+				"count": 1
+			}],
+			"non_registered_types": [],
+			"others": 0
+		},
+		"stack_management": {},
+		"ui_metric": {},
+		"application_usage": {},
+		"csp": {
+			"strict": true,
+			"warn_legacy_browsers": true,
+			"rules_changed_from_default": false
+		},
+		"core": {
+			"config": {
+				"elasticsearch": {
+					"api_version": "master",
+					"sniff_on_start": false,
+					"sniff_interval_ms": -1,
+					"sniff_on_connection_fault": false,
+					"number_of_hosts_configured": 1,
+					"custom_headers_configured": false,
+					"health_check_delay_ms": 2500,
+					"log_queries": false,
+					"ping_timeout_ms": 30000,
+					"request_headers_whitelist_configured": false,
+					"request_timeout_ms": 30000,
+					"shard_timeout_ms": 30000,
+					"ssl": {
+						"always_present_certificate": false,
+						"certificate_authorities_configured": false,
+						"certificate_configured": false,
+						"key_configured": false,
+						"verification_mode": "full",
+						"truststore_configured": false,
+						"keystore_configured": false
+					},
+					"principal": "kibana_system_user"
+				},
+				"http": {
+					"base_path_configured": false,
+					"max_payload_bytes": 1048576,
+					"rewrite_base_path": false,
+					"keepalive_timeout": 120000,
+					"socket_timeout": 120000,
+					"compression": {
+						"enabled": true,
+						"referrer_whitelist_configured": false
+					},
+					"xsrf": {
+						"disable_protection": false,
+						"allowlist_configured": false
+					},
+					"request_id": {
+						"allow_from_any_ip": false,
+						"ip_allowlist_configured": false
+					},
+					"ssl": {
+						"certificate_authorities_configured": false,
+						"certificate_configured": false,
+						"cipher_suites": ["TLS_AES_256_GCM_SHA384", "TLS_CHACHA20_POLY1305_SHA256", "TLS_AES_128_GCM_SHA256", "ECDHE-RSA-AES128-GCM-SHA256", "ECDHE-ECDSA-AES128-GCM-SHA256", "ECDHE-RSA-AES256-GCM-SHA384", "ECDHE-ECDSA-AES256-GCM-SHA384", "DHE-RSA-AES128-GCM-SHA256", "ECDHE-RSA-AES128-SHA256", "DHE-RSA-AES128-SHA256", "ECDHE-RSA-AES256-SHA384", "DHE-RSA-AES256-SHA384", "ECDHE-RSA-AES256-SHA256", "DHE-RSA-AES256-SHA256", "HIGH", "!aNULL", "!eNULL", "!EXPORT", "!DES", "!RC4", "!MD5", "!PSK", "!SRP", "!CAMELLIA"],
+						"key_configured": false,
+						"redirect_http_from_port_configured": false,
+						"supported_protocols": ["TLSv1.1", "TLSv1.2", "TLSv1.3"],
+						"client_authentication": "none",
+						"keystore_configured": false,
+						"truststore_configured": false
+					},
+					"security_response_headers": {
+						"strict_transport_security": "NULL",
+						"x_content_type_options": "nosniff",
+						"referrer_policy": "no-referrer-when-downgrade",
+						"permissions_policy_configured": false,
+						"disable_embedding": false,
+						"cross_origin_opener_policy": "same-origin"
+					}
+				},
+				"logging": {
+					"appenders_types_used": [],
+					"loggers_configured_count": 0
+				},
+				"saved_objects": {
+					"custom_index": false,
+					"max_import_payload_bytes": 26214400,
+					"max_import_export_size": 10000
+				},
+				"deprecated_keys": {
+					"set": [],
+					"unset": ["xpack.cloud.chat.enabled", "xpack.cloud.chat.chatURL", "xpack.cloud.chatIdentitySecret", "xpack.cloud.full_story.enabled", "xpack.cloud.full_story.org_id", "xpack.cloud.full_story.eventTypesAllowlist"]
+				}
+			},
+			"environment": {
+				"memory": {
+					"heap_size_limit": 4345298944,
+					"heap_total_bytes": 1420214272,
+					"heap_used_bytes": 599224584
+				}
+			},
+			"services": {
+				"saved_objects": {
+					"indices": [{
+						"alias": ".kibana",
+						"docs_count": 161,
+						"docs_deleted": 42,
+						"store_size_bytes": 2751834,
+						"primary_store_size_bytes": 2751834,
+						"saved_objects_docs_count": 131
+					}, {
+						"alias": ".kibana_task_manager",
+						"docs_count": 27,
+						"docs_deleted": 150,
+						"store_size_bytes": 99187,
+						"primary_store_size_bytes": 99187,
+						"saved_objects_docs_count": 27
+					}],
+					"legacy_url_aliases": {
+						"total_count": 0,
+						"disabled_count": 0,
+						"active_count": 0,
+						"inactive_count": 0
+					}
+				}
+			},
+			"api_calls_saved_objects_bulk_create_total": 0,
+			"api_calls_saved_objects_bulk_create_namespace_default_total": 0,
+			"api_calls_saved_objects_bulk_create_namespace_default_kibana_request_yes": 0,
+			"api_calls_saved_objects_bulk_create_namespace_default_kibana_request_no": 0,
+			"api_calls_saved_objects_bulk_create_namespace_custom_total": 0,
+			"api_calls_saved_objects_bulk_create_namespace_custom_kibana_request_yes": 0,
+			"api_calls_saved_objects_bulk_create_namespace_custom_kibana_request_no": 0,
+			"api_calls_saved_objects_bulk_get_total": 0,
+			"api_calls_saved_objects_bulk_get_namespace_default_total": 0,
+			"api_calls_saved_objects_bulk_get_namespace_default_kibana_request_yes": 0,
+			"api_calls_saved_objects_bulk_get_namespace_default_kibana_request_no": 0,
+			"api_calls_saved_objects_bulk_get_namespace_custom_total": 0,
+			"api_calls_saved_objects_bulk_get_namespace_custom_kibana_request_yes": 0,
+			"api_calls_saved_objects_bulk_get_namespace_custom_kibana_request_no": 0,
+			"api_calls_saved_objects_bulk_resolve_total": 0,
+			"api_calls_saved_objects_bulk_resolve_namespace_default_total": 0,
+			"api_calls_saved_objects_bulk_resolve_namespace_default_kibana_request_yes": 0,
+			"api_calls_saved_objects_bulk_resolve_namespace_default_kibana_request_no": 0,
+			"api_calls_saved_objects_bulk_resolve_namespace_custom_total": 0,
+			"api_calls_saved_objects_bulk_resolve_namespace_custom_kibana_request_yes": 0,
+			"api_calls_saved_objects_bulk_resolve_namespace_custom_kibana_request_no": 0,
+			"api_calls_saved_objects_bulk_update_total": 0,
+			"api_calls_saved_objects_bulk_update_namespace_default_total": 0,
+			"api_calls_saved_objects_bulk_update_namespace_default_kibana_request_yes": 0,
+			"api_calls_saved_objects_bulk_update_namespace_default_kibana_request_no": 0,
+			"api_calls_saved_objects_bulk_update_namespace_custom_total": 0,
+			"api_calls_saved_objects_bulk_update_namespace_custom_kibana_request_yes": 0,
+			"api_calls_saved_objects_bulk_update_namespace_custom_kibana_request_no": 0,
+			"api_calls_saved_objects_bulk_delete_total": 0,
+			"api_calls_saved_objects_bulk_delete_namespace_default_total": 0,
+			"api_calls_saved_objects_bulk_delete_namespace_default_kibana_request_yes": 0,
+			"api_calls_saved_objects_bulk_delete_namespace_default_kibana_request_no": 0,
+			"api_calls_saved_objects_bulk_delete_namespace_custom_total": 0,
+			"api_calls_saved_objects_bulk_delete_namespace_custom_kibana_request_yes": 0,
+			"api_calls_saved_objects_bulk_delete_namespace_custom_kibana_request_no": 0,
+			"api_calls_saved_objects_create_total": 0,
+			"api_calls_saved_objects_create_namespace_default_total": 0,
+			"api_calls_saved_objects_create_namespace_default_kibana_request_yes": 0,
+			"api_calls_saved_objects_create_namespace_default_kibana_request_no": 0,
+			"api_calls_saved_objects_create_namespace_custom_total": 0,
+			"api_calls_saved_objects_create_namespace_custom_kibana_request_yes": 0,
+			"api_calls_saved_objects_create_namespace_custom_kibana_request_no": 0,
+			"api_calls_saved_objects_delete_total": 0,
+			"api_calls_saved_objects_delete_namespace_default_total": 0,
+			"api_calls_saved_objects_delete_namespace_default_kibana_request_yes": 0,
+			"api_calls_saved_objects_delete_namespace_default_kibana_request_no": 0,
+			"api_calls_saved_objects_delete_namespace_custom_total": 0,
+			"api_calls_saved_objects_delete_namespace_custom_kibana_request_yes": 0,
+			"api_calls_saved_objects_delete_namespace_custom_kibana_request_no": 0,
+			"api_calls_saved_objects_find_total": 0,
+			"api_calls_saved_objects_find_namespace_default_total": 0,
+			"api_calls_saved_objects_find_namespace_default_kibana_request_yes": 0,
+			"api_calls_saved_objects_find_namespace_default_kibana_request_no": 0,
+			"api_calls_saved_objects_find_namespace_custom_total": 0,
+			"api_calls_saved_objects_find_namespace_custom_kibana_request_yes": 0,
+			"api_calls_saved_objects_find_namespace_custom_kibana_request_no": 0,
+			"api_calls_saved_objects_get_total": 0,
+			"api_calls_saved_objects_get_namespace_default_total": 0,
+			"api_calls_saved_objects_get_namespace_default_kibana_request_yes": 0,
+			"api_calls_saved_objects_get_namespace_default_kibana_request_no": 0,
+			"api_calls_saved_objects_get_namespace_custom_total": 0,
+			"api_calls_saved_objects_get_namespace_custom_kibana_request_yes": 0,
+			"api_calls_saved_objects_get_namespace_custom_kibana_request_no": 0,
+			"api_calls_saved_objects_resolve_total": 0,
+			"api_calls_saved_objects_resolve_namespace_default_total": 0,
+			"api_calls_saved_objects_resolve_namespace_default_kibana_request_yes": 0,
+			"api_calls_saved_objects_resolve_namespace_default_kibana_request_no": 0,
+			"api_calls_saved_objects_resolve_namespace_custom_total": 0,
+			"api_calls_saved_objects_resolve_namespace_custom_kibana_request_yes": 0,
+			"api_calls_saved_objects_resolve_namespace_custom_kibana_request_no": 0,
+			"api_calls_saved_objects_update_total": 0,
+			"api_calls_saved_objects_update_namespace_default_total": 0,
+			"api_calls_saved_objects_update_namespace_default_kibana_request_yes": 0,
+			"api_calls_saved_objects_update_namespace_default_kibana_request_no": 0,
+			"api_calls_saved_objects_update_namespace_custom_total": 0,
+			"api_calls_saved_objects_update_namespace_custom_kibana_request_yes": 0,
+			"api_calls_saved_objects_update_namespace_custom_kibana_request_no": 0,
+			"api_calls_saved_objects_import_total": 0,
+			"api_calls_saved_objects_import_namespace_default_total": 0,
+			"api_calls_saved_objects_import_namespace_default_kibana_request_yes": 0,
+			"api_calls_saved_objects_import_namespace_default_kibana_request_no": 0,
+			"api_calls_saved_objects_import_namespace_custom_total": 0,
+			"api_calls_saved_objects_import_namespace_custom_kibana_request_yes": 0,
+			"api_calls_saved_objects_import_namespace_custom_kibana_request_no": 0,
+			"api_calls_saved_objects_import_create_new_copies_enabled_yes": 0,
+			"api_calls_saved_objects_import_create_new_copies_enabled_no": 0,
+			"api_calls_saved_objects_import_overwrite_enabled_yes": 0,
+			"api_calls_saved_objects_import_overwrite_enabled_no": 0,
+			"api_calls_saved_objects_resolve_import_errors_total": 0,
+			"api_calls_saved_objects_resolve_import_errors_namespace_default_total": 0,
+			"api_calls_saved_objects_resolve_import_errors_namespace_default_kibana_request_yes": 0,
+			"api_calls_saved_objects_resolve_import_errors_namespace_default_kibana_request_no": 0,
+			"api_calls_saved_objects_resolve_import_errors_namespace_custom_total": 0,
+			"api_calls_saved_objects_resolve_import_errors_namespace_custom_kibana_request_yes": 0,
+			"api_calls_saved_objects_resolve_import_errors_namespace_custom_kibana_request_no": 0,
+			"api_calls_saved_objects_resolve_import_errors_create_new_copies_enabled_yes": 0,
+			"api_calls_saved_objects_resolve_import_errors_create_new_copies_enabled_no": 0,
+			"api_calls_saved_objects_export_total": 0,
+			"api_calls_saved_objects_export_namespace_default_total": 0,
+			"api_calls_saved_objects_export_namespace_default_kibana_request_yes": 0,
+			"api_calls_saved_objects_export_namespace_default_kibana_request_no": 0,
+			"api_calls_saved_objects_export_namespace_custom_total": 0,
+			"api_calls_saved_objects_export_namespace_custom_kibana_request_yes": 0,
+			"api_calls_saved_objects_export_namespace_custom_kibana_request_no": 0,
+			"api_calls_legacy_dashboard_import_total": 0,
+			"api_calls_legacy_dashboard_import_namespace_default_total": 0,
+			"api_calls_legacy_dashboard_import_namespace_default_kibana_request_yes": 0,
+			"api_calls_legacy_dashboard_import_namespace_default_kibana_request_no": 0,
+			"api_calls_legacy_dashboard_import_namespace_custom_total": 0,
+			"api_calls_legacy_dashboard_import_namespace_custom_kibana_request_yes": 0,
+			"api_calls_legacy_dashboard_import_namespace_custom_kibana_request_no": 0,
+			"api_calls_legacy_dashboard_export_total": 0,
+			"api_calls_legacy_dashboard_export_namespace_default_total": 0,
+			"api_calls_legacy_dashboard_export_namespace_default_kibana_request_yes": 0,
+			"api_calls_legacy_dashboard_export_namespace_default_kibana_request_no": 0,
+			"api_calls_legacy_dashboard_export_namespace_custom_total": 0,
+			"api_calls_legacy_dashboard_export_namespace_custom_kibana_request_yes": 0,
+			"api_calls_legacy_dashboard_export_namespace_custom_kibana_request_no": 0,
+			"api_calls_saved_objects_export_all_types_selected_yes": 0,
+			"api_calls_saved_objects_export_all_types_selected_no": 0,
+			"saved_objects_repository_resolved_outcome_exact_match": 0,
+			"saved_objects_repository_resolved_outcome_alias_match": 0,
+			"saved_objects_repository_resolved_outcome_conflict": 0,
+			"saved_objects_repository_resolved_outcome_not_found": 0,
+			"saved_objects_repository_resolved_outcome_total": 0
+		},
+		"kibana_config_usage": {
+			"elasticsearch_username": "[redacted]",
+			"elasticsearch_password": "[redacted]",
+			"plugins_paths": []
+		},
+		"localization": {
+			"locale": "en",
+			"integrities": {},
+			"labels_count": 0
+		},
+		"event_loop_delays": {
+			"daily": [{
+				"min": 0.027648,
+				"max": 157.286399,
+				"mean": 11.077016727817297,
+				"exceeds": 0,
+				"stddev": 2.950164391567134,
+				"from_timestamp": "2023-01-10T13:50:00.813Z",
+				"last_updated_at": "2023-01-10T13:51:00.814Z",
+				"percentiles": {
+					"50": 11.059199,
+					"75": 11.083775,
+					"95": 11.173887,
+					"99": 15.359999
+				},
+				"process_id": 33597,
+				"instance_uuid": "5b2de169-2785-441b-ae8c-186a1936b17d"
+			}]
+		},
+		"index_patterns": {
+			"index_patterns_count": 0,
+			"index_patterns_with_scripted_field_count": 0,
+			"index_patterns_with_runtime_field_count": 0,
+			"scripted_field_count": 0,
+			"runtime_field_count": 0,
+			"per_index_pattern": {
+				"scripted_field_count": {},
+				"runtime_field_count": {},
+				"scripted_field_line_count": {},
+				"runtime_field_line_count": {}
+			}
+		},
+		"spaces": {
+			"available": true,
+			"enabled": true,
+			"count": 1,
+			"uses_feature_controls": false,
+			"disabled_features": {
+				"actions": 0,
+				"graph": 0,
+				"saved_objects_tagging": 0,
+				"stack_alerts": 0,
+				"canvas": 0,
+				"maps": 0,
+				"general_cases": 0,
+				"observability_cases": 0,
+				"fleetv_2": 0,
+				"fleet": 0,
+				"osquery": 0,
+				"ml": 0,
+				"uptime": 0,
+				"siem": 0,
+				"security_solution_cases": 0,
+				"infrastructure": 0,
+				"logs": 0,
+				"monitoring": 0,
+				"enterprise_search": 0,
+				"apm": 0,
+				"discover": 0,
+				"visualize": 0,
+				"dashboard": 0,
+				"dev_tools": 0,
+				"advanced_settings": 0,
+				"index_patterns": 0,
+				"files_management": 0,
+				"files_shared_image": 0,
+				"saved_objects_management": 0
+			},
+			"api_calls_copy_saved_objects_total": 0,
+			"api_calls_copy_saved_objects_kibana_request_yes": 0,
+			"api_calls_copy_saved_objects_kibana_request_no": 0,
+			"api_calls_copy_saved_objects_create_new_copies_enabled_yes": 0,
+			"api_calls_copy_saved_objects_create_new_copies_enabled_no": 0,
+			"api_calls_copy_saved_objects_overwrite_enabled_yes": 0,
+			"api_calls_copy_saved_objects_overwrite_enabled_no": 0,
+			"api_calls_resolve_copy_saved_objects_errors_total": 0,
+			"api_calls_resolve_copy_saved_objects_errors_kibana_request_yes": 0,
+			"api_calls_resolve_copy_saved_objects_errors_kibana_request_no": 0,
+			"api_calls_resolve_copy_saved_objects_errors_create_new_copies_enabled_yes": 0,
+			"api_calls_resolve_copy_saved_objects_errors_create_new_copies_enabled_no": 0,
+			"api_calls_disable_legacy_url_aliases_total": 0
+		},
+		"security": {
+			"audit_logging_enabled": false,
+			"login_selector_enabled": false,
+			"access_agreement_enabled": false,
+			"auth_provider_count": 1,
+			"enabled_auth_providers": ["basic"],
+			"http_auth_schemes": ["apikey", "bearer"],
+			"session_idle_timeout_in_minutes": 480,
+			"session_lifespan_in_minutes": 43200,
+			"session_cleanup_in_minutes": 60
+		},
+		"telemetry": {
+			"opt_in_status": true,
+			"usage_fetcher": "server"
+		},
+		"files": {
+			"storage": {
+				"es_fixed_size_index": {
+					"capacity": 53687091200,
+					"available": 53687091200,
+					"used": 0
+				}
+			},
+			"count_by_status": {},
+			"count_by_extension": []
+		},
+		"actions": {
+			"has_errors": false,
+			"count_total": 0,
+			"count_by_type": {},
+			"count_active_total": 0,
+			"count_active_by_type": {},
+			"count_active_alert_history_connectors": 0,
+			"count_active_email_connectors_by_service_type": {},
+			"count_actions_namespaces": 0,
+			"count_actions_executions_per_day": 0,
+			"count_actions_executions_by_type_per_day": {},
+			"count_actions_executions_failed_per_day": 0,
+			"count_actions_executions_failed_by_type_per_day": {},
+			"avg_execution_time_per_day": 0,
+			"avg_execution_time_by_type_per_day": {},
+			"count_connector_types_by_action_run_outcome_per_day": {},
+			"alert_history_connector_enabled": false
+		},
+		"kql": {
+			"opt_in_count": 0,
+			"opt_out_count": 0,
+			"default_query_language": "default-kuery"
+		},
+		"search": {
+			"success_count": 0,
+			"error_count": 0,
+			"average_duration": null
+		},
+		"search_session": {
+			"transient_count": 0,
+			"persisted_count": 0,
+			"total_count": 0
+		},
+		"reporting": {
+			"available": true,
+			"enabled": true,
+			"last_7_days": {
+				"csv_searchsource": {
+					"available": true,
+					"total": 0,
+					"deprecated": 0,
+					"output_size": {
+						"1_0": null,
+						"5_0": null,
+						"25_0": null,
+						"50_0": null,
+						"75_0": null,
+						"95_0": null,
+						"99_0": null
+					},
+					"metrics": {
+						"csv_rows": {
+							"50_0": null,
+							"75_0": null,
+							"95_0": null,
+							"99_0": null
+						}
+					},
+					"app": {
+						"canvas_workpad": 0,
+						"search": 0,
+						"visualization": 0,
+						"dashboard": 0
+					}
+				},
+				"csv_searchsource_immediate": {
+					"available": true,
+					"total": 0,
+					"deprecated": 0,
+					"output_size": {
+						"1_0": null,
+						"5_0": null,
+						"25_0": null,
+						"50_0": null,
+						"75_0": null,
+						"95_0": null,
+						"99_0": null
+					},
+					"metrics": {
+						"csv_rows": {
+							"50_0": null,
+							"75_0": null,
+							"95_0": null,
+							"99_0": null
+						}
+					},
+					"app": {
+						"canvas_workpad": 0,
+						"search": 0,
+						"visualization": 0,
+						"dashboard": 0
+					}
+				},
+				"png": {
+					"available": true,
+					"total": 0,
+					"deprecated": 0,
+					"output_size": {
+						"1_0": null,
+						"5_0": null,
+						"25_0": null,
+						"50_0": null,
+						"75_0": null,
+						"95_0": null,
+						"99_0": null
+					},
+					"metrics": {
+						"png_cpu": {
+							"50_0": null,
+							"75_0": null,
+							"95_0": null,
+							"99_0": null
+						},
+						"png_memory": {
+							"50_0": null,
+							"75_0": null,
+							"95_0": null,
+							"99_0": null
+						}
+					},
+					"app": {
+						"canvas_workpad": 0,
+						"search": 0,
+						"visualization": 0,
+						"dashboard": 0
+					}
+				},
+				"pngv_2": {
+					"available": true,
+					"total": 0,
+					"deprecated": 0,
+					"output_size": {
+						"1_0": null,
+						"5_0": null,
+						"25_0": null,
+						"50_0": null,
+						"75_0": null,
+						"95_0": null,
+						"99_0": null
+					},
+					"metrics": {
+						"png_cpu": {
+							"50_0": null,
+							"75_0": null,
+							"95_0": null,
+							"99_0": null
+						},
+						"png_memory": {
+							"50_0": null,
+							"75_0": null,
+							"95_0": null,
+							"99_0": null
+						}
+					},
+					"app": {
+						"canvas_workpad": 0,
+						"search": 0,
+						"visualization": 0,
+						"dashboard": 0
+					}
+				},
+				"printable_pdf": {
+					"available": true,
+					"total": 0,
+					"deprecated": 0,
+					"output_size": {
+						"1_0": null,
+						"5_0": null,
+						"25_0": null,
+						"50_0": null,
+						"75_0": null,
+						"95_0": null,
+						"99_0": null
+					},
+					"metrics": {
+						"pdf_cpu": {
+							"50_0": null,
+							"75_0": null,
+							"95_0": null,
+							"99_0": null
+						},
+						"pdf_memory": {
+							"50_0": null,
+							"75_0": null,
+							"95_0": null,
+							"99_0": null
+						},
+						"pdf_pages": {
+							"50_0": null,
+							"75_0": null,
+							"95_0": null,
+							"99_0": null
+						}
+					},
+					"app": {
+						"canvas_workpad": 0,
+						"search": 0,
+						"visualization": 0,
+						"dashboard": 0
+					},
+					"layout": {
+						"canvas": 0,
+						"print": 0,
+						"preserve_layout": 0
+					}
+				},
+				"printable_pdf_v_2": {
+					"available": true,
+					"total": 0,
+					"deprecated": 0,
+					"output_size": {
+						"1_0": null,
+						"5_0": null,
+						"25_0": null,
+						"50_0": null,
+						"75_0": null,
+						"95_0": null,
+						"99_0": null
+					},
+					"metrics": {
+						"pdf_cpu": {
+							"50_0": null,
+							"75_0": null,
+							"95_0": null,
+							"99_0": null
+						},
+						"pdf_memory": {
+							"50_0": null,
+							"75_0": null,
+							"95_0": null,
+							"99_0": null
+						},
+						"pdf_pages": {
+							"50_0": null,
+							"75_0": null,
+							"95_0": null,
+							"99_0": null
+						}
+					},
+					"app": {
+						"canvas_workpad": 0,
+						"search": 0,
+						"visualization": 0,
+						"dashboard": 0
+					},
+					"layout": {
+						"canvas": 0,
+						"print": 0,
+						"preserve_layout": 0
+					}
+				},
+				"all": 0,
+				"status": {
+					"completed": 0,
+					"failed": 0
+				}
+			},
+			"csv_searchsource": {
+				"available": true,
+				"total": 0,
+				"deprecated": 0,
+				"output_size": {
+					"1_0": null,
+					"5_0": null,
+					"25_0": null,
+					"50_0": null,
+					"75_0": null,
+					"95_0": null,
+					"99_0": null
+				},
+				"metrics": {
+					"csv_rows": {
+						"50_0": null,
+						"75_0": null,
+						"95_0": null,
+						"99_0": null
+					}
+				},
+				"app": {
+					"canvas_workpad": 0,
+					"search": 0,
+					"visualization": 0,
+					"dashboard": 0
+				}
+			},
+			"csv_searchsource_immediate": {
+				"available": true,
+				"total": 0,
+				"deprecated": 0,
+				"output_size": {
+					"1_0": null,
+					"5_0": null,
+					"25_0": null,
+					"50_0": null,
+					"75_0": null,
+					"95_0": null,
+					"99_0": null
+				},
+				"metrics": {
+					"csv_rows": {
+						"50_0": null,
+						"75_0": null,
+						"95_0": null,
+						"99_0": null
+					}
+				},
+				"app": {
+					"canvas_workpad": 0,
+					"search": 0,
+					"visualization": 0,
+					"dashboard": 0
+				}
+			},
+			"png": {
+				"available": true,
+				"total": 0,
+				"deprecated": 0,
+				"output_size": {
+					"1_0": null,
+					"5_0": null,
+					"25_0": null,
+					"50_0": null,
+					"75_0": null,
+					"95_0": null,
+					"99_0": null
+				},
+				"metrics": {
+					"png_cpu": {
+						"50_0": null,
+						"75_0": null,
+						"95_0": null,
+						"99_0": null
+					},
+					"png_memory": {
+						"50_0": null,
+						"75_0": null,
+						"95_0": null,
+						"99_0": null
+					}
+				},
+				"app": {
+					"canvas_workpad": 0,
+					"search": 0,
+					"visualization": 0,
+					"dashboard": 0
+				}
+			},
+			"pngv_2": {
+				"available": true,
+				"total": 0,
+				"deprecated": 0,
+				"output_size": {
+					"1_0": null,
+					"5_0": null,
+					"25_0": null,
+					"50_0": null,
+					"75_0": null,
+					"95_0": null,
+					"99_0": null
+				},
+				"metrics": {
+					"png_cpu": {
+						"50_0": null,
+						"75_0": null,
+						"95_0": null,
+						"99_0": null
+					},
+					"png_memory": {
+						"50_0": null,
+						"75_0": null,
+						"95_0": null,
+						"99_0": null
+					}
+				},
+				"app": {
+					"canvas_workpad": 0,
+					"search": 0,
+					"visualization": 0,
+					"dashboard": 0
+				}
+			},
+			"printable_pdf": {
+				"available": true,
+				"total": 0,
+				"deprecated": 0,
+				"output_size": {
+					"1_0": null,
+					"5_0": null,
+					"25_0": null,
+					"50_0": null,
+					"75_0": null,
+					"95_0": null,
+					"99_0": null
+				},
+				"metrics": {
+					"pdf_cpu": {
+						"50_0": null,
+						"75_0": null,
+						"95_0": null,
+						"99_0": null
+					},
+					"pdf_memory": {
+						"50_0": null,
+						"75_0": null,
+						"95_0": null,
+						"99_0": null
+					},
+					"pdf_pages": {
+						"50_0": null,
+						"75_0": null,
+						"95_0": null,
+						"99_0": null
+					}
+				},
+				"app": {
+					"canvas_workpad": 0,
+					"search": 0,
+					"visualization": 0,
+					"dashboard": 0
+				},
+				"layout": {
+					"canvas": 0,
+					"print": 0,
+					"preserve_layout": 0
+				}
+			},
+			"printable_pdf_v_2": {
+				"available": true,
+				"total": 0,
+				"deprecated": 0,
+				"output_size": {
+					"1_0": null,
+					"5_0": null,
+					"25_0": null,
+					"50_0": null,
+					"75_0": null,
+					"95_0": null,
+					"99_0": null
+				},
+				"metrics": {
+					"pdf_cpu": {
+						"50_0": null,
+						"75_0": null,
+						"95_0": null,
+						"99_0": null
+					},
+					"pdf_memory": {
+						"50_0": null,
+						"75_0": null,
+						"95_0": null,
+						"99_0": null
+					},
+					"pdf_pages": {
+						"50_0": null,
+						"75_0": null,
+						"95_0": null,
+						"99_0": null
+					}
+				},
+				"app": {
+					"canvas_workpad": 0,
+					"search": 0,
+					"visualization": 0,
+					"dashboard": 0
+				},
+				"layout": {
+					"canvas": 0,
+					"print": 0,
+					"preserve_layout": 0
+				}
+			},
+			"all": 0,
+			"status": {
+				"completed": 0,
+				"failed": 0
+			}
+		},
+		"file_upload": {
+			"file_upload": {
+				"index_creation_count": 0
+			}
+		},
+		"alerts": {
+			"has_errors": false,
+			"count_total": 0,
+			"count_by_type": {},
+			"throttle_time": {
+				"min": "0s",
+				"avg": "0s",
+				"max": "0s"
+			},
+			"schedule_time": {
+				"min": "0s",
+				"avg": "0s",
+				"max": "0s"
+			},
+			"throttle_time_number_s": {
+				"min": 0,
+				"avg": 0,
+				"max": 0
+			},
+			"schedule_time_number_s": {
+				"min": 0,
+				"avg": 0,
+				"max": 0
+			},
+			"connectors_per_alert": {
+				"min": 0,
+				"avg": 0,
+				"max": 0
+			},
+			"count_active_by_type": {},
+			"count_active_total": 0,
+			"count_disabled_total": 0,
+			"count_rules_by_execution_status": {
+				"success": 0,
+				"error": 0,
+				"warning": 0
+			},
+			"count_rules_with_tags": 0,
+			"count_rules_by_notify_when": {
+				"on_action_group_change": 0,
+				"on_active_alert": 0,
+				"on_throttle_interval": 0
+			},
+			"count_rules_snoozed": 0,
+			"count_rules_muted": 0,
+			"count_rules_with_muted_alerts": 0,
+			"count_connector_types_by_consumers": {},
+			"count_rules_namespaces": 0,
+			"count_rules_executions_per_day": 0,
+			"count_rules_executions_by_type_per_day": {},
+			"count_rules_executions_failured_per_day": 0,
+			"count_rules_executions_failured_by_reason_per_day": {},
+			"count_rules_executions_failured_by_reason_by_type_per_day": {},
+			"count_rules_by_execution_status_per_day": {},
+			"count_rules_executions_timeouts_per_day": 0,
+			"count_rules_executions_timeouts_by_type_per_day": {},
+			"count_failed_and_unrecognized_rule_tasks_per_day": 0,
+			"count_failed_and_unrecognized_rule_tasks_by_status_per_day": {},
+			"count_failed_and_unrecognized_rule_tasks_by_status_by_type_per_day": {},
+			"avg_execution_time_per_day": 0,
+			"avg_execution_time_by_type_per_day": {},
+			"avg_es_search_duration_per_day": 0,
+			"avg_es_search_duration_by_type_per_day": {},
+			"avg_total_search_duration_per_day": 0,
+			"avg_total_search_duration_by_type_per_day": {},
+			"percentile_num_generated_actions_per_day": {
+				"p_50": 0,
+				"p_90": 0,
+				"p_99": 0
+			},
+			"percentile_num_generated_actions_by_type_per_day": {
+				"p_50": {},
+				"p_90": {},
+				"p_99": {}
+			},
+			"percentile_num_alerts_per_day": {
+				"p_50": 0,
+				"p_90": 0,
+				"p_99": 0
+			},
+			"percentile_num_alerts_by_type_per_day": {
+				"p_50": {},
+				"p_90": {},
+				"p_99": {}
+			}
+		},
+		"saved_objects_tagging": {
+			"used_tags": 0,
+			"tagged_objects": 0,
+			"types": {}
+		},
+		"canvas": {},
+		"dashboard": {
+			"panels": {
+				"total": 0,
+				"by_reference": 0,
+				"by_value": 0,
+				"by_type": {}
+			},
+			"controls": {
+				"total": 0,
+				"chaining_system": {},
+				"ignore_settings": {},
+				"label_position": {},
+				"by_type": {}
+			}
+		},
+		"maps": {
+			"geo_shape_agg_layers_count": 0,
+			"index_patterns_with_geo_field_count": 0,
+			"index_patterns_with_geo_point_field_count": 0,
+			"index_patterns_with_geo_shape_field_count": 0,
+			"time_captured": "2023-01-10T13:52:12.596Z",
+			"maps_total_count": 0,
+			"basemaps": {},
+			"joins": {},
+			"layer_types": {},
+			"resolutions": {},
+			"scaling_options": {},
+			"attributes_per_map": {
+				"data_sources_count": {
+					"min": 0,
+					"max": 0,
+					"avg": 0
+				},
+				"layers_count": {
+					"min": 0,
+					"max": 0,
+					"avg": 0
+				},
+				"layer_types_count": {},
+				"ems_vector_layers_count": {},
+				"custom_icons_count": {
+					"min": 0,
+					"max": 0,
+					"avg": 0
+				}
+			}
+		},
+		"cases": {},
+		"osquery": {
+			"beat_metrics": {
+				"usage": {
+					"memory": {
+						"rss": {}
+					},
+					"cpu": {}
+				}
+			},
+			"live_query_usage": {
+				"session": {
+					"errors": 0,
+					"count": 0
+				}
+			},
+			"scheduled_queries": {
+				"query_groups": {
+					"total": 0,
+					"empty": 0
+				}
+			}
+		},
+		"rollups": {
+			"index_patterns": {
+				"total": 0
+			},
+			"saved_searches": {
+				"total": 0
+			},
+			"visualizations": {
+				"total": 0,
+				"lens_total": 0,
+				"saved_searches": {
+					"total": 0,
+					"lens_total": 0
+				}
+			}
+		},
+		"cloud_security_posture": {
+			"indices": {
+				"findings": {},
+				"latest_findings": {},
+				"score": {}
+			},
+			"accounts_stats": [],
+			"resources_stats": []
+		},
+		"discover_enhanced": {
+			"explore_data_in_chart_action_enabled": false
+		},
+		"ml": {
+			"alert_rules": {
+				"xpack_ml_anomaly_detection_alert": {
+					"count_by_result_type": {}
+				},
+				"xpack_ml_anomaly_detection_jobs_health": {
+					"count_by_check_type": {
+						"datafeed": 0,
+						"mml": 0,
+						"delayed_data": 0,
+						"error_messages": 0
+					}
+				}
+			}
+		},
+		"uptime": {
+			"last_24_hours": {
+				"hits": {
+					"overview_page": 0,
+					"monitor_page": 0,
+					"no_of_unique_monitors": 0,
+					"settings_page": 0,
+					"monitor_frequency": [],
+					"monitor_name_stats": {
+						"min_length": 0,
+						"max_length": 0,
+						"avg_length": 0
+					},
+					"no_of_unique_observer_locations": 0,
+					"observer_location_name_stats": {
+						"min_length": 0,
+						"max_length": 0,
+						"avg_length": 0
+					},
+					"date_range_start": [],
+					"date_range_end": [],
+					"auto_refresh_enabled": false,
+					"autorefresh_interval": [],
+					"fleet_no_of_unique_monitors": 0,
+					"fleet_monitor_frequency": [],
+					"fleet_monitor_name_stats": {
+						"min_length": 0,
+						"max_length": 0,
+						"avg_length": 0
+					}
+				}
+			}
+		},
+		"security_solution": {
+			"detection_metrics": {
+				"ml_jobs": {
+					"ml_job_usage": {
+						"custom": {
+							"enabled": 0,
+							"disabled": 0
+						},
+						"elastic": {
+							"enabled": 0,
+							"disabled": 0
+						}
+					},
+					"ml_job_metrics": []
+				},
+				"detection_rules": {
+					"detection_rule_detail": [],
+					"detection_rule_usage": {
+						"query": {
+							"enabled": 0,
+							"disabled": 0,
+							"alerts": 0,
+							"cases": 0,
+							"legacy_notifications_enabled": 0,
+							"legacy_notifications_disabled": 0,
+							"notifications_enabled": 0,
+							"notifications_disabled": 0
+						},
+						"threshold": {
+							"enabled": 0,
+							"disabled": 0,
+							"alerts": 0,
+							"cases": 0,
+							"legacy_notifications_enabled": 0,
+							"legacy_notifications_disabled": 0,
+							"notifications_enabled": 0,
+							"notifications_disabled": 0
+						},
+						"eql": {
+							"enabled": 0,
+							"disabled": 0,
+							"alerts": 0,
+							"cases": 0,
+							"legacy_notifications_enabled": 0,
+							"legacy_notifications_disabled": 0,
+							"notifications_enabled": 0,
+							"notifications_disabled": 0
+						},
+						"machine_learning": {
+							"enabled": 0,
+							"disabled": 0,
+							"alerts": 0,
+							"cases": 0,
+							"legacy_notifications_enabled": 0,
+							"legacy_notifications_disabled": 0,
+							"notifications_enabled": 0,
+							"notifications_disabled": 0
+						},
+						"threat_match": {
+							"enabled": 0,
+							"disabled": 0,
+							"alerts": 0,
+							"cases": 0,
+							"legacy_notifications_enabled": 0,
+							"legacy_notifications_disabled": 0,
+							"notifications_enabled": 0,
+							"notifications_disabled": 0
+						},
+						"new_terms": {
+							"enabled": 0,
+							"disabled": 0,
+							"alerts": 0,
+							"cases": 0,
+							"legacy_notifications_enabled": 0,
+							"legacy_notifications_disabled": 0,
+							"notifications_enabled": 0,
+							"notifications_disabled": 0
+						},
+						"elastic_total": {
+							"enabled": 0,
+							"disabled": 0,
+							"alerts": 0,
+							"cases": 0,
+							"legacy_notifications_enabled": 0,
+							"legacy_notifications_disabled": 0,
+							"notifications_enabled": 0,
+							"notifications_disabled": 0
+						},
+						"custom_total": {
+							"enabled": 0,
+							"disabled": 0,
+							"alerts": 0,
+							"cases": 0,
+							"legacy_notifications_enabled": 0,
+							"legacy_notifications_disabled": 0,
+							"notifications_enabled": 0,
+							"notifications_disabled": 0
+						}
+					},
+					"detection_rule_status": {
+						"all_rules": {
+							"eql": {
+								"failures": 0,
+								"top_failures": [],
+								"partial_failures": 0,
+								"top_partial_failures": [],
+								"succeeded": 0,
+								"index_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"search_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"enrichment_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_count": 0
+							},
+							"threat_match": {
+								"failures": 0,
+								"top_failures": [],
+								"partial_failures": 0,
+								"top_partial_failures": [],
+								"succeeded": 0,
+								"index_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"search_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"enrichment_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_count": 0
+							},
+							"machine_learning": {
+								"failures": 0,
+								"top_failures": [],
+								"partial_failures": 0,
+								"top_partial_failures": [],
+								"succeeded": 0,
+								"index_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"search_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"enrichment_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_count": 0
+							},
+							"query": {
+								"failures": 0,
+								"top_failures": [],
+								"partial_failures": 0,
+								"top_partial_failures": [],
+								"succeeded": 0,
+								"index_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"search_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"enrichment_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_count": 0
+							},
+							"saved_query": {
+								"failures": 0,
+								"top_failures": [],
+								"partial_failures": 0,
+								"top_partial_failures": [],
+								"succeeded": 0,
+								"index_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"search_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"enrichment_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_count": 0
+							},
+							"threshold": {
+								"failures": 0,
+								"top_failures": [],
+								"partial_failures": 0,
+								"top_partial_failures": [],
+								"succeeded": 0,
+								"index_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"search_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"enrichment_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_count": 0
+							},
+							"total": {
+								"failures": 0,
+								"partial_failures": 0,
+								"succeeded": 0
+							}
+						},
+						"custom_rules": {
+							"eql": {
+								"failures": 0,
+								"top_failures": [],
+								"partial_failures": 0,
+								"top_partial_failures": [],
+								"succeeded": 0,
+								"index_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"search_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"enrichment_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_count": 0
+							},
+							"threat_match": {
+								"failures": 0,
+								"top_failures": [],
+								"partial_failures": 0,
+								"top_partial_failures": [],
+								"succeeded": 0,
+								"index_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"search_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"enrichment_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_count": 0
+							},
+							"machine_learning": {
+								"failures": 0,
+								"top_failures": [],
+								"partial_failures": 0,
+								"top_partial_failures": [],
+								"succeeded": 0,
+								"index_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"search_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"enrichment_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_count": 0
+							},
+							"query": {
+								"failures": 0,
+								"top_failures": [],
+								"partial_failures": 0,
+								"top_partial_failures": [],
+								"succeeded": 0,
+								"index_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"search_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"enrichment_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_count": 0
+							},
+							"saved_query": {
+								"failures": 0,
+								"top_failures": [],
+								"partial_failures": 0,
+								"top_partial_failures": [],
+								"succeeded": 0,
+								"index_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"search_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"enrichment_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_count": 0
+							},
+							"threshold": {
+								"failures": 0,
+								"top_failures": [],
+								"partial_failures": 0,
+								"top_partial_failures": [],
+								"succeeded": 0,
+								"index_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"search_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"enrichment_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_count": 0
+							},
+							"total": {
+								"failures": 0,
+								"partial_failures": 0,
+								"succeeded": 0
+							}
+						},
+						"elastic_rules": {
+							"eql": {
+								"failures": 0,
+								"top_failures": [],
+								"partial_failures": 0,
+								"top_partial_failures": [],
+								"succeeded": 0,
+								"index_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"search_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"enrichment_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_count": 0
+							},
+							"threat_match": {
+								"failures": 0,
+								"top_failures": [],
+								"partial_failures": 0,
+								"top_partial_failures": [],
+								"succeeded": 0,
+								"index_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"search_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"enrichment_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_count": 0
+							},
+							"machine_learning": {
+								"failures": 0,
+								"top_failures": [],
+								"partial_failures": 0,
+								"top_partial_failures": [],
+								"succeeded": 0,
+								"index_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"search_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"enrichment_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_count": 0
+							},
+							"query": {
+								"failures": 0,
+								"top_failures": [],
+								"partial_failures": 0,
+								"top_partial_failures": [],
+								"succeeded": 0,
+								"index_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"search_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"enrichment_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_count": 0
+							},
+							"saved_query": {
+								"failures": 0,
+								"top_failures": [],
+								"partial_failures": 0,
+								"top_partial_failures": [],
+								"succeeded": 0,
+								"index_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"search_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"enrichment_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_count": 0
+							},
+							"threshold": {
+								"failures": 0,
+								"top_failures": [],
+								"partial_failures": 0,
+								"top_partial_failures": [],
+								"succeeded": 0,
+								"index_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"search_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"enrichment_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_duration": {
+									"max": 0,
+									"avg": 0,
+									"min": 0
+								},
+								"gap_count": 0
+							},
+							"total": {
+								"failures": 0,
+								"partial_failures": 0,
+								"succeeded": 0
+							}
+						}
+					}
+				}
+			},
+			"endpoint_metrics": {
+				"unique_endpoint_count": 0
+			}
+		},
+		"infraops": {
+			"last_24_hours": {
+				"hits": {
+					"infraops_hosts": 0,
+					"infraops_docker": 0,
+					"infraops_kubernetes": 0,
+					"logs": 0
+				}
+			}
+		},
+		"monitoring": {
+			"has_monitoring_data": false,
+			"clusters": []
+		},
+		"upgrade_assistant_telemetry": {
+			"features": {
+				"deprecation_logging": {
+					"enabled": true
+				}
+			}
+		},
+		"enterprise_search": {
+			"ui_viewed": {
+				"overview": 0,
+				"setup_guide": 0
+			},
+			"ui_error": {
+				"cannot_connect": 0
+			},
+			"ui_clicked": {
+				"app_search": 0,
+				"workplace_search": 0
+			}
+		},
+		"app_search": {
+			"ui_viewed": {
+				"setup_guide": 0,
+				"engines_overview": 0
+			},
+			"ui_error": {
+				"cannot_connect": 0,
+				"not_found": 0
+			},
+			"ui_clicked": {
+				"create_first_engine_button": 0,
+				"engine_table_link": 0
+			}
+		},
+		"workplace_search": {
+			"ui_viewed": {
+				"setup_guide": 0,
+				"overview": 0
+			},
+			"ui_error": {
+				"cannot_connect": 0,
+				"not_found": 0
+			},
+			"ui_clicked": {
+				"header_launch_button": 0,
+				"org_name_change_button": 0,
+				"onboarding_card_button": 0,
+				"recent_activity_source_details_link": 0
+			}
+		},
+		"apm": {
+			"tasks": {
+				"aggregated_transactions": {
+					"took": {
+						"ms": 14
+					}
+				},
+				"cloud": {
+					"took": {
+						"ms": 21
+					}
+				},
+				"host": {
+					"took": {
+						"ms": 10
+					}
+				},
+				"environments": {
+					"took": {
+						"ms": 7
+					}
+				},
+				"processor_events": {
+					"took": {
+						"ms": 26
+					}
+				},
+				"agent_configuration": {
+					"took": {
+						"ms": 4
+					}
+				},
+				"services": {
+					"took": {
+						"ms": 42
+					}
+				},
+				"versions": {
+					"took": {
+						"ms": 1
+					}
+				},
+				"groupings": {
+					"took": {
+						"ms": 4
+					}
+				},
+				"integrations": {
+					"took": {
+						"ms": 1
+					}
+				},
+				"agents": {
+					"took": {
+						"ms": 20
+					}
+				},
+				"indices_stats": {
+					"took": {
+						"ms": 14
+					}
+				},
+				"cardinality": {
+					"took": {
+						"ms": 2
+					}
+				},
+				"service_groups": {
+					"took": {
+						"ms": 2
+					}
+				},
+				"per_service": {
+					"took": {
+						"ms": 2
+					}
+				}
+			},
+			"cloud": {
+				"availability_zone": [],
+				"provider": [],
+				"region": []
+			},
+			"host": {
+				"os": {
+					"platform": []
+				}
+			},
+			"environments": {
+				"services_without_environment": 0,
+				"services_with_multiple_environments": 0,
+				"top_environments": []
+			},
+			"counts": {
+				"error": {
+					"1_d": 0,
+					"all": 0
+				},
+				"metric": {
+					"1_d": 0,
+					"all": 0
+				},
+				"span": {
+					"1_d": 0,
+					"all": 0
+				},
+				"transaction": {
+					"1_d": 0,
+					"all": 0
+				},
+				"onboarding": {
+					"1_d": 0,
+					"all": 0
+				},
+				"agent_configuration": {
+					"all": 0
+				},
+				"max_error_groups_per_service": {
+					"1_d": 0
+				},
+				"max_transaction_groups_per_service": {
+					"1_d": 0
+				},
+				"traces": {
+					"1_d": 0
+				},
+				"services": {
+					"1_d": 0
+				}
+			},
+			"has_any_services": false,
+			"services_per_agent": {
+				"dotnet": 0,
+				"go": 0,
+				"i_os_swift": 0,
+				"java": 0,
+				"js_base": 0,
+				"nodejs": 0,
+				"php": 0,
+				"python": 0,
+				"ruby": 0,
+				"rum_js": 0,
+				"android_java": 0,
+				"otlp": 0,
+				"opentelemetry_cpp": 0,
+				"opentelemetry_dotnet": 0,
+				"opentelemetry_erlang": 0,
+				"opentelemetry_go": 0,
+				"opentelemetry_java": 0,
+				"opentelemetry_nodejs": 0,
+				"opentelemetry_php": 0,
+				"opentelemetry_python": 0,
+				"opentelemetry_ruby": 0,
+				"opentelemetry_swift": 0,
+				"opentelemetry_webjs": 0
+			},
+			"integrations": {
+				"ml": {
+					"all_jobs_count": 0
+				}
+			},
+			"agents": {},
+			"indices": {
+				"metric": {
+					"shards": {
+						"total": 0
+					},
+					"all": {
+						"total": {
+							"docs": {
+								"count": 0
+							},
+							"store": {
+								"size_bytes": 0
+							}
+						}
+					}
+				},
+				"traces": {
+					"shards": {
+						"total": 0
+					},
+					"all": {
+						"total": {
+							"docs": {
+								"count": 0
+							},
+							"store": {
+								"size_bytes": 0
+							}
+						}
+					}
+				},
+				"shards": {
+					"total": 1
+				},
+				"all": {
+					"total": {
+						"docs": {
+							"count": 0
+						},
+						"store": {
+							"size_bytes": 225
+						}
+					}
+				}
+			},
+			"cardinality": {
+				"client": {
+					"geo": {
+						"country_iso_code": {
+							"rum": {}
+						}
+					}
+				},
+				"transaction": {
+					"name": {
+						"all_agents": {},
+						"rum": {}
+					}
+				},
+				"user_agent": {
+					"original": {
+						"all_agents": {},
+						"rum": {}
+					}
+				}
+			},
+			"service_groups": {
+				"kuery_fields": [],
+				"total": 0
+			},
+			"per_service": []
+		},
+		"usage_collector_stats": {
+			"not_ready": {
+				"count": 1,
+				"names": ["cloud_provider"]
+			},
+			"not_ready_timeout": {
+				"count": 0,
+				"names": []
+			},
+			"succeeded": {
+				"count": 47,
+				"names": ["task_manager", "cloud", "ui_counters", "usage_counters", "kibana", "saved_objects_counts", "stack_management", "ui_metric", "application_usage", "csp", "core", "kibana_config_usage", "localization", "event_loop_delays", "index-patterns", "sample-data", "spaces", "security", "telemetry", "static_telemetry", "files", "actions", "kql", "search", "search-session", "reporting", "fileUpload", "alerts", "saved_objects_tagging", "canvas", "dashboard", "maps", "cases", "osquery", "rollups", "cloud_security_posture", "discoverEnhanced", "ml", "uptime", "security_solution", "infraops", "monitoring", "upgrade-assistant-telemetry", "enterprise_search", "app_search", "workplace_search", "apm"]
+			},
+			"failed": {
+				"count": 1,
+				"names": ["fleet"]
+			},
+			"total_is_ready_duration": 178.0390419960022,
+			"total_fetch_duration": 5290.524584889412,
+			"total_duration": 5468.563626885414,
+			"is_ready_duration_breakdown": [{
+				"name": "task_manager",
+				"duration": 5.660874992609024
+			}, {
+				"name": "cloud",
+				"duration": 5.8187499940395355
+			}, {
+				"name": "ui_counters",
+				"duration": 5.759667009115219
+			}, {
+				"name": "usage_counters",
+				"duration": 5.704582989215851
+			}, {
+				"name": "kibana",
+				"duration": 5.639499992132187
+			}, {
+				"name": "saved_objects_counts",
+				"duration": 5.60970801115036
+			}, {
+				"name": "stack_management",
+				"duration": 5.566707998514175
+			}, {
+				"name": "ui_metric",
+				"duration": 5.44887501001358
+			}, {
+				"name": "application_usage",
+				"duration": 5.371124982833862
+			}, {
+				"name": "csp",
+				"duration": 5.191667020320892
+			}, {
+				"name": "core",
+				"duration": 5.161874979734421
+			}, {
+				"name": "kibana_config_usage",
+				"duration": 5.106916010379791
+			}, {
+				"name": "localization",
+				"duration": 5.061207979917526
+			}, {
+				"name": "event_loop_delays",
+				"duration": 5.018041014671326
+			}, {
+				"name": "index-patterns",
+				"duration": 4.769167006015778
+			}, {
+				"name": "sample-data",
+				"duration": 4.6891250014305115
+			}, {
+				"name": "spaces",
+				"duration": 4.650166988372803
+			}, {
+				"name": "security",
+				"duration": 4.513541013002396
+			}, {
+				"name": "telemetry",
+				"duration": 4.428207993507385
+			}, {
+				"name": "static_telemetry",
+				"duration": 4.30341699719429
+			}, {
+				"name": "files",
+				"duration": 4.232583999633789
+			}, {
+				"name": "actions",
+				"duration": 3.1876659989356995
+			}, {
+				"name": "kql",
+				"duration": 3.039792001247406
+			}, {
+				"name": "search",
+				"duration": 2.994374990463257
+			}, {
+				"name": "search-session",
+				"duration": 2.936125010251999
+			}, {
+				"name": "reporting",
+				"duration": 2.990667015314102
+			}, {
+				"name": "fileUpload",
+				"duration": 2.795625001192093
+			}, {
+				"name": "alerts",
+				"duration": 2.8246249854564667
+			}, {
+				"name": "saved_objects_tagging",
+				"duration": 2.6560830175876617
+			}, {
+				"name": "canvas",
+				"duration": 2.6224160194396973
+			}, {
+				"name": "dashboard",
+				"duration": 2.589958995580673
+			}, {
+				"name": "maps",
+				"duration": 2.509208023548126
+			}, {
+				"name": "cases",
+				"duration": 2.464042007923126
+			}, {
+				"name": "fleet",
+				"duration": 2.402208000421524
+			}, {
+				"name": "osquery",
+				"duration": 2.353542000055313
+			}, {
+				"name": "rollups",
+				"duration": 2.3134170174598694
+			}, {
+				"name": "cloud_security_posture",
+				"duration": 2.2688339948654175
+			}, {
+				"name": "discoverEnhanced",
+				"duration": 2.2374579906463623
+			}, {
+				"name": "ml",
+				"duration": 2.2010419964790344
+			}, {
+				"name": "uptime",
+				"duration": 2.1550839841365814
+			}, {
+				"name": "security_solution",
+				"duration": 2.0779999792575836
+			}, {
+				"name": "infraops",
+				"duration": 2.030708998441696
+			}, {
+				"name": "monitoring",
+				"duration": 1.9940419793128967
+			}, {
+				"name": "upgrade-assistant-telemetry",
+				"duration": 1.9610829949378967
+			}, {
+				"name": "enterprise_search",
+				"duration": 1.9196660220623016
+			}, {
+				"name": "app_search",
+				"duration": 1.8956669867038727
+			}, {
+				"name": "workplace_search",
+				"duration": 1.8480420112609863
+			}, {
+				"name": "apm",
+				"duration": 1.8153750002384186
+			}, {
+				"name": "cloud_provider",
+				"duration": 5.248582988977432
+			}],
+			"fetch_duration_breakdown": [{
+				"name": "task_manager",
+				"duration": 41.575874984264374
+			}, {
+				"name": "cloud",
+				"duration": 40.44124999642372
+			}, {
+				"name": "ui_counters",
+				"duration": 136.63783398270607
+			}, {
+				"name": "usage_counters",
+				"duration": 139.9375
+			}, {
+				"name": "kibana",
+				"duration": 65.6062500178814
+			}, {
+				"name": "saved_objects_counts",
+				"duration": 103.24937498569489
+			}, {
+				"name": "stack_management",
+				"duration": 51.154249995946884
+			}, {
+				"name": "ui_metric",
+				"duration": 63.171332985162735
+			}, {
+				"name": "application_usage",
+				"duration": 76.20454201102257
+			}, {
+				"name": "csp",
+				"duration": 31.845749974250793
+			}, {
+				"name": "core",
+				"duration": 1090.7641670107841
+			}, {
+				"name": "kibana_config_usage",
+				"duration": 35.37579199671745
+			}, {
+				"name": "localization",
+				"duration": 34.423249989748
+			}, {
+				"name": "event_loop_delays",
+				"duration": 74.96329200267792
+			}, {
+				"name": "index-patterns",
+				"duration": 82.80674999952316
+			}, {
+				"name": "sample-data",
+				"duration": 68.91350001096725
+			}, {
+				"name": "spaces",
+				"duration": 1084.0624579787254
+			}, {
+				"name": "security",
+				"duration": 28.159457981586456
+			}, {
+				"name": "telemetry",
+				"duration": 76.34054198861122
+			}, {
+				"name": "static_telemetry",
+				"duration": 32.52200001478195
+			}, {
+				"name": "files",
+				"duration": 96.32400000095367
+			}, {
+				"name": "actions",
+				"duration": 95.32025000452995
+			}, {
+				"name": "kql",
+				"duration": 67.1400839984417
+			}, {
+				"name": "search",
+				"duration": 71.46724998950958
+			}, {
+				"name": "search-session",
+				"duration": 70.32270801067352
+			}, {
+				"name": "reporting",
+				"duration": 93.59783297777176
+			}, {
+				"name": "fileUpload",
+				"duration": 24.781042009592056
+			}, {
+				"name": "alerts",
+				"duration": 79.29345798492432
+			}, {
+				"name": "saved_objects_tagging",
+				"duration": 74.94850000739098
+			}, {
+				"name": "canvas",
+				"duration": 69.73095798492432
+			}, {
+				"name": "dashboard",
+				"duration": 75.29033300280571
+			}, {
+				"name": "maps",
+				"duration": 89.25395801663399
+			}, {
+				"name": "cases",
+				"duration": 67.72945898771286
+			}, {
+				"name": "fleet",
+				"duration": 89.49762499332428
+			}, {
+				"name": "osquery",
+				"duration": 0
+			}, {
+				"name": "rollups",
+				"duration": 85.70349997282028
+			}, {
+				"name": "cloud_security_posture",
+				"duration": 61.712500005960464
+			}, {
+				"name": "discoverEnhanced",
+				"duration": 15.112625002861023
+			}, {
+				"name": "ml",
+				"duration": 89.12508401274681
+			}, {
+				"name": "uptime",
+				"duration": 92.15970802307129
+			}, {
+				"name": "security_solution",
+				"duration": 143.66054099798203
+			}, {
+				"name": "infraops",
+				"duration": 11.913708984851837
+			}, {
+				"name": "monitoring",
+				"duration": 26.16737499833107
+			}, {
+				"name": "upgrade-assistant-telemetry",
+				"duration": 78.1860840022564
+			}, {
+				"name": "enterprise_search",
+				"duration": 65.08399999141693
+			}, {
+				"name": "app_search",
+				"duration": 65.25654101371765
+			}, {
+				"name": "workplace_search",
+				"duration": 72.8924999833107
+			}, {
+				"name": "apm",
+				"duration": 60.697792023420334
+			}]
+		}
+	},
+	"cluster_uuid": "SJZyL2xDQMW4LTod14LXkQ"
+}
