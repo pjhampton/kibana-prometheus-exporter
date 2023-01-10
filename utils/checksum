@@ -1,6 +1,6 @@
 #!/bin/bash
 
-HASH_MD5=$(md5sum $1 | awk {'print $1'})
+HASH_MD5=$(md5 $1 | awk {'print $1'})
 HASH_SHA1=$(shasum -a 1 $1 | awk {'print $1'})
 HASH_SHA256=$(shasum -a 256 $1 | awk {'print $1'})
 HASH_SHA512=$(shasum -a 512 $1 | awk {'print $1'})

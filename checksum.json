@@ -1,0 +1,8 @@
+{
+  "artifact": "./build/kibanaPrometheusExporter-8.5.2.zip",
+  "author": "https://github.com/pjhampton",
+  "md5": "",
+  "sha1": "6e10e3b843360181a490845d158f36772be9fc55",
+  "sha256": "c4462b5aa12708e54fc598e1d0871960c43e9a38daf7cc619942aebd6366d9d2",
+  "sha512": "27397341a101e25b467416b90af4566d10c3c05c6e250a3e4fb83a0664fd292c4f1db1081724b9616811c2114e51400bf22a0afabdc299941a3496babaa0f067"
+}
