@@ -1,6 +1,6 @@
 {
   "id": "kibanaPrometheusExporter",
-  "version": "8.7.0",
+  "version": "8.7.1",
   "owner": {
     "name": "https://github.com/pjhampton"
   },
