@@ -7,6 +7,9 @@
     "clean": "rm -rf node_modules build",
     "plugin-helpers": "node ../../scripts/plugin_helpers",
     "kbn": "node ../../scripts/kbn",
-    "test": "jest --coverage"
+    "test": "npx jest --coverage"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
   }
 }
