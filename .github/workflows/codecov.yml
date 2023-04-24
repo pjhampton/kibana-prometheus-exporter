@@ -12,10 +12,14 @@ jobs:
       with:
         fetch-depth: 2 
 
-    - name: Set up Node.js ${{ matrix.node-version }}
+    - name: Read .nvmrc
+      run: echo "##[set-output name=NVMRC;]$(cat .nvmrc)"
+      id: nvm
+
+    - name: Use Node.js (.nvmrc)
       uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: "${{ steps.nvm.outputs.NVMRC }}"
 
     - name: Install dependencies
       run: yarn
