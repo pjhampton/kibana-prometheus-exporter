@@ -26,7 +26,7 @@ export default function (info : any) {
     return prometheusStyleFormatter(metrics)
 }
 
-const convertStateToScalar = (state: string): number => {
+export const convertStateToScalar = (state: string): number => {
     if (state == 'available') {
         return 1;
     } else if (state == 'degraded') {
