@@ -21,7 +21,7 @@ jobs:
       run: yarn
 
     - name: Run the tests
-      run: npm test -- --coverage
+      run: yarn test
 
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v1
