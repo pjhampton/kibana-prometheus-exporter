@@ -3,9 +3,6 @@
 <h1 align="center">Kibana Prometheus Exporter</h1>
 
 <p align="center">
-  <a href="https://snyk.io/test/github/pjhampton/kibana-prometheus-exporter">
-    <img src="https://snyk.io/test/github/pjhampton/kibana-prometheus-exporter/badge.svg" alt="Snyk Repo Badge" />
-  </a>
   <a href="https://github.com/pjhampton/kibana-prometheus-exporter/actions/workflows/codeql-analysis.yml">
     <img src="https://github.com/pjhampton/kibana-prometheus-exporter/actions/workflows/codeql-analysis.yml/badge.svg" alt="CodeQL Repo Badge" />
   </a>
@@ -14,6 +11,9 @@
   </a>
   <a href="https://github.com/pjhampton/kibana-prometheus-exporter/actions/workflows/release-wiki.yml">
     <img src="https://github.com/pjhampton/kibana-prometheus-exporter/actions/workflows/release-wiki.yml/badge.svg" alt="Release Wiki" />
+  </a>
+  <a href="https://snyk.io/test/github/pjhampton/kibana-prometheus-exporter">
+    <img src="https://img.shields.io/badge/Snyk-Secured-8A2BE2.svg?logo=snyk">
   </a>
 </p>
 
@@ -70,6 +70,7 @@ Details on the various exported metrics are documented on the [Github wiki page]
 
 | Release | MD5 / SHA1 / SHA256 / SHA512   | Release Artifact - This must match your Kibana version |
 |---------|-------------------------------|------------------------------------------------------------------|
+| 8.9.0 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/8.9.0/checksum.json) | [kibana-prometheus-exporter-8.9.0](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/8.9.0)   |
 | 8.8.2 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/8.8.2/checksum.json) | [kibana-prometheus-exporter-8.8.2](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/8.8.2)   |
 | 8.8.1 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/8.8.1/checksum.json) | [kibana-prometheus-exporter-8.8.1](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/8.8.1)   |
 | 8.8.0 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/8.8.0/checksum.json) | [kibana-prometheus-exporter-8.8.0](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/8.8.0)   |
