@@ -1,10 +1,10 @@
 {
   "name": "kibanaPrometheusExporter",
-  "version": "8.9.1",
+  "version": "8.9.2",
   "private": true,
   "scripts": {
     "build": "yarn plugin-helpers build",
-    "clean": "rm -rf node_modules build",
+    "clean": "rm -rf build node_modules checksum.json",
     "plugin-helpers": "node ../../scripts/plugin_helpers",
     "kbn": "node ../../scripts/kbn",
     "test": "npx jest --coverage"
