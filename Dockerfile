@@ -2,6 +2,7 @@ ARG STACK_VERSION
 
 # https://github.com/elastic/kibana-docker
 # See https://hub.docker.com/_/kibana/tags
+# or https://hub.docker.com/r/elastic/kibana/tags for official version
 FROM kibana:${STACK_VERSION}
 
 ARG STACK_VERSION
