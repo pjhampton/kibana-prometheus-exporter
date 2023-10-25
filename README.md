@@ -10,7 +10,7 @@
     <img src="https://github.com/pjhampton/kibana-prometheus-exporter/actions/workflows/codecov.yml/badge.svg" alt="CodeCov Repo Badge" />
   </a>
   <a href="https://github.com/pjhampton/kibana-prometheus-exporter/actions/workflows/release-wiki.yml">
-    <img src="https://github.com/pjhampton/kibana-prometheus-exporter/actions/workflows/release-wiki.yml/badge.svg" alt="Release Wiki" />
+    <img src="https://github.com/pjhampton/kibana-prometheus-exporter/actions/workflows/release-wiki.yml/badge.svg?branch=main" alt="Release Wiki" />
   </a>
   <a href="https://snyk.io/test/github/pjhampton/kibana-prometheus-exporter">
     <img src="https://img.shields.io/badge/Snyk-Secured-8A2BE2.svg?logo=snyk">
