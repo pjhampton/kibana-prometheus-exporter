@@ -1,16 +1,30 @@
-name: Test & Coverage
+name: "Test & Coverage"
 
 on: [push, pull_request]
 
 jobs:
-  build:
-    runs-on: ubuntu-22.04
+  test_and_coverage:
+    name: "Test & Coverage"
+    runs-on: ubuntu-latest
+    permissions: write-all
+
+    strategy:
+      fail-fast: false
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v2
       with:
-        fetch-depth: 2 
+        repository: elastic/kibana
+        ref: refs/heads/main
+
+    - uses: actions/checkout@v2
+      with:
+        name: pjhampton/kibana-prometheus-exporter
+        ref: refs/heads/main
+        path: 'plugins/kibana-prometheus-exporter'
+
+    - name: Install workflow dependencies
+      run: sudo apt-get install -y jq
 
     - name: Read .nvmrc
       run: echo "##[set-output name=NVMRC;]$(cat .nvmrc)"
@@ -21,13 +35,15 @@ jobs:
       with:
         node-version: "${{ steps.nvm.outputs.NVMRC }}"
 
-    - name: Install dependencies
-      run: yarn
+    - name: Set up Kibana Development Environment
+      run: yarn kbn bootstrap
 
-    - name: Run the tests
+    - name: Run tests
+      working-directory: plugins/kibana-prometheus-exporter
       run: yarn test
 
     - name: Upload coverage to Codecov
+      working-directory: plugins/kibana-prometheus-exporter
       uses: codecov/codecov-action@v1
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
