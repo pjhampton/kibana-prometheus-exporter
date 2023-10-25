@@ -2,7 +2,7 @@
 
 This Kibana plugin was born out of a project in the basement of an investment bank. Prometheus was used for all the monitoring and everything in our infrastructure stack had an exporter except Kibana. It didn't feel right leaving Kibana out of the party so this project was... hacked together, to be candid. Although it's rough around the edges, it's now used by big and small projects in all sorts of cool organizations.
 
-The exporter really is simple. But it would be unfair to assume that all the metrics make sense at first glance.  This document aims to give a concise overview of the metrics exported by this Kibana plugin.
+The exporter's output is simple. But it would be wrong to assume that all the metrics make sense at first glance. This document aims to give a concise overview of the metrics exported by this Kibana plugin.
 
 ## Metrics
 
