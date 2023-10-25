@@ -35,8 +35,12 @@ jobs:
       with:
         node-version: "${{ steps.nvm.outputs.NVMRC }}"
 
-    - name: Set up Kibana Development Environment
+    - name: Set up Kibana development environment
       run: yarn kbn bootstrap
+
+    - name: Install plugin dependencies
+      working-directory: plugins/kibana-prometheus-exporter
+      run: yarn install
 
     - name: Run tests
       working-directory: plugins/kibana-prometheus-exporter
