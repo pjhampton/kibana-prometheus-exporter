@@ -1,6 +1,7 @@
 name: Release Wiki
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - 'wiki/**'
