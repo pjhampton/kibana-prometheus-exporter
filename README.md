@@ -70,6 +70,7 @@ Details on the various exported metrics are documented on the [Github wiki page]
 
 | Release | MD5 / SHA1 / SHA256 / SHA512   | Release Artifact - This must match your Kibana version |
 |---------|-------------------------------|------------------------------------------------------------------|
+| 8.11.0 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/8.11.0/checksum.json) | [kibana-prometheus-exporter-8.11.0](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/8.11.0) |
 | 8.10.4 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/8.10.4/checksum.json) | [kibana-prometheus-exporter-8.10.4](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/8.10.4) |
 | 8.10.3 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/8.10.3/checksum.json) | [kibana-prometheus-exporter-8.10.3](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/8.10.3) |
 | 8.10.2 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/8.10.2/checksum.json) | [kibana-prometheus-exporter-8.10.2](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/8.10.2)   |
