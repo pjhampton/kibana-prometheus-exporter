@@ -18,8 +18,10 @@
 </p>
 
 > This project will be sunset in January 2024
+>
 > Please do not introduce it into your environment.
-> https://github.com/pjhampton/kibana-prometheus-exporter/issues/344
+>
+> Please see https://github.com/pjhampton/kibana-prometheus-exporter/issues/344
 
 <img src="https://raw.githubusercontent.com/pjhampton/kibana-prometheus-exporter/master/.github/kibana_prometheus.png" alt="kibana prometheus exporter">
 
