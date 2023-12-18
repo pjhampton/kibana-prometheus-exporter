@@ -27,11 +27,11 @@
 
 <p align="center">Once Installed, please visit http://localhost:5601/_prometheus/metrics</p>
 
-- [Installing](#installing)
-- [Docker](#docker)
-- [Prometheus Config](#prometheus-config)
-- [Metrics](#metrics)
-- [Releases](#releases)
+1. [Installing](#installing)
+1. [Docker](#docker)
+1. [Prometheus Config](#prometheus-config)
+1. [Metrics](#metrics)
+1. [Releases](#releases)
 
 ## Installing
 
