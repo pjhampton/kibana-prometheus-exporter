@@ -27,11 +27,11 @@
 
 <p align="center">Once Installed, please visit http://localhost:5601/_prometheus/metrics</p>
 
-1. [Installing](#installing)
-1. [Docker](#docker)
-1. [Prometheus Config](#prometheus-config)
-1. [Metrics](#metrics)
-1. [Releases](#releases)
+- [Installing](#installing)
+- [Docker](#docker)
+- [Prometheus Config](#prometheus-config)
+- [Metrics](#metrics)
+- [Releases](#releases)
 
 ## Installing
 
@@ -53,7 +53,7 @@ RUN bin/kibana-plugin install https://github.com/pjhampton/kibana-prometheus-exp
 
 ## Prometheus Config
 
-Below is an example prometheus config. 
+Below is an example prometheus config.
 
 ```
 - job_name: 'kibana'
@@ -66,7 +66,7 @@ Below is an example prometheus config.
     password: 'changeme'
 ```
 
-## Metrics 
+## Metrics
 
 Details on the various exported metrics are documented on the [Github wiki page](https://github.com/pjhampton/kibana-prometheus-exporter/wiki).
 
@@ -76,6 +76,7 @@ Details on the various exported metrics are documented on the [Github wiki page]
 
 | Release | MD5 / SHA1 / SHA256 / SHA512   | Release Artifact - This must match your Kibana version |
 |---------|-------------------------------|------------------------------------------------------------------|
+| 8.11.2 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/8.11.2/checksum.json) | [kibana-prometheus-exporter-8.11.2](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/8.11.2) |
 | 8.11.1 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/8.11.1/checksum.json) | [kibana-prometheus-exporter-8.11.1](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/8.11.1) |
 | 8.11.0 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/8.11.0/checksum.json) | [kibana-prometheus-exporter-8.11.0](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/8.11.0) |
 | 8.10.4 | [checksum.json](https://github.com/pjhampton/kibana-prometheus-exporter/releases/download/8.10.4/checksum.json) | [kibana-prometheus-exporter-8.10.4](https://github.com/pjhampton/kibana-prometheus-exporter/releases/tag/8.10.4) |
